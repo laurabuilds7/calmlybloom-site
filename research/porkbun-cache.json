@@ -1,0 +1,1521 @@
+{
+  "adelaide.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "136.98",
+      "regularPrice": "136.98",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adelaide.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adelaide.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "4,367.16",
+          "regularPrice": "4,367.16",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "4,367.16",
+          "regularPrice": "4,367.16",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "3,057.17",
+      "regularPrice": "3,057.17",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adelaide.store": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "2,729.67",
+          "regularPrice": "2,729.67",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "2,729.67",
+          "regularPrice": "2,729.67",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "682.81",
+      "regularPrice": "682.81",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adelaide.studio": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "108.60",
+          "regularPrice": "108.60",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "108.60",
+          "regularPrice": "108.60",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "54.36",
+      "regularPrice": "108.60",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adeline.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "218.86",
+          "regularPrice": "218.86",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "218.86",
+          "regularPrice": "218.86",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "55.11",
+      "regularPrice": "55.11",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adeline.boutique": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "4.12",
+      "regularPrice": "24.20",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 7
+  },
+  "adeline.club": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "16.90",
+          "regularPrice": "16.90",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "16.90",
+          "regularPrice": "16.90",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "no",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "273.44",
+      "regularPrice": "273.44",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "adeline.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adeline.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "8.75",
+      "regularPrice": "23.17",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "adeline.store": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "43.77",
+          "regularPrice": "43.77",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "43.77",
+          "regularPrice": "43.77",
+          "type": "transfer"
+        }
+      },
+      "avail": "no",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.57",
+      "regularPrice": "43.77",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "afterglow.boutique": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "4.12",
+      "regularPrice": "24.20",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "afterglow.garden": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "1.54",
+      "regularPrice": "26.26",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "alma.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "no",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "546.35",
+      "regularPrice": "546.35",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "alma.store": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "2,729.67",
+          "regularPrice": "2,729.67",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "2,729.67",
+          "regularPrice": "2,729.67",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "682.81",
+      "regularPrice": "682.81",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amanthea.boutique": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "4.12",
+      "regularPrice": "24.20",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amanthea.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amanthea.life": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "29.35",
+          "regularPrice": "29.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "29.35",
+          "regularPrice": "29.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.06",
+      "regularPrice": "29.35",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amanthea.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "31.41",
+          "regularPrice": "31.41",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "31.41",
+          "regularPrice": "31.41",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.06",
+      "regularPrice": "31.41",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "amanthea.world": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "33.47",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "amara.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "21.11",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amara.boutique": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "4.12",
+      "regularPrice": "24.20",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amara.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amara.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "33.27",
+          "regularPrice": "33.27",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "33.27",
+          "regularPrice": "33.27",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "no",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "2,183.84",
+      "regularPrice": "2,183.84",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "amber.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "873.85",
+          "regularPrice": "873.85",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "873.85",
+          "regularPrice": "873.85",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "611.85",
+      "regularPrice": "611.85",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amber.store": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "1,092.18",
+          "regularPrice": "1,092.18",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "1,092.18",
+          "regularPrice": "1,092.18",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "273.44",
+      "regularPrice": "273.44",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "ambled.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "ambled.life": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "29.35",
+          "regularPrice": "29.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "29.35",
+          "regularPrice": "29.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.06",
+      "regularPrice": "29.35",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "ambled.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "31.41",
+          "regularPrice": "31.41",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "31.41",
+          "regularPrice": "31.41",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.06",
+      "regularPrice": "31.41",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "ambled.world": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "33.47",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amelie.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "273.44",
+          "regularPrice": "273.44",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "273.44",
+          "regularPrice": "273.44",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "no",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "273.44",
+      "regularPrice": "273.44",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 2
+  },
+  "amorette.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "21.11",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amorette.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 7
+  },
+  "amorette.garden": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "1.54",
+      "regularPrice": "26.26",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amorette.store": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "43.77",
+          "regularPrice": "43.77",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "43.77",
+          "regularPrice": "43.77",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "2.57",
+      "regularPrice": "43.77",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amorette.world": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "33.47",
+          "regularPrice": "33.47",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "33.47",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amoura.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "amoura.garden": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "1.54",
+      "regularPrice": "26.26",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anemone.boutique": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "24.20",
+          "regularPrice": "24.20",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "4.12",
+      "regularPrice": "24.20",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anemone.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anemone.garden": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "1.54",
+      "regularPrice": "26.26",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anemone.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "8.75",
+      "regularPrice": "23.17",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anemone.shop": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "no",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "546.35",
+      "regularPrice": "546.35",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 9
+  },
+  "anouk.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "546.35",
+          "regularPrice": "546.35",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "yes",
+      "price": "136.98",
+      "regularPrice": "136.98",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anouk.earth": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "15.96",
+          "regularPrice": "15.96",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "5.66",
+      "regularPrice": "15.96",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anouk.garden": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "26.26",
+          "regularPrice": "26.26",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "1.54",
+      "regularPrice": "26.26",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "anthea.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "8.75",
+      "regularPrice": "23.17",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "astraea.blog": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "21.11",
+          "regularPrice": "21.11",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "3.60",
+      "regularPrice": "21.11",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  },
+  "astraea.love": {
+    "limits": {
+      "TTL": 10,
+      "limit": 1,
+      "naturalLanguage": "1 out of 1 checks within 10 seconds used.",
+      "used": 1
+    },
+    "response": {
+      "additional": {
+        "renewal": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "renewal"
+        },
+        "transfer": {
+          "price": "23.17",
+          "regularPrice": "23.17",
+          "type": "transfer"
+        }
+      },
+      "avail": "yes",
+      "firstYearPromo": "yes",
+      "minDuration": 1,
+      "premium": "no",
+      "price": "8.75",
+      "regularPrice": "23.17",
+      "type": "registration"
+    },
+    "status": "SUCCESS",
+    "ttlRemaining": 10
+  }
+}

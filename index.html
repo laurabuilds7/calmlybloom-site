@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+
+  <title>calmlybloom — a softer way into crypto</title>
+  <meta name="description" content="I'm Laura — mom, Cape Town local, and someone who found her way into crypto without the noise. If you've been curious but overwhelmed, the first step is a free conversation." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="calmlybloom — a softer way into crypto" />
+  <meta property="og:description" content="A calm, judgement-free conversation about crypto with someone who once stood exactly where you are." />
+  <meta property="og:url" content="https://calmlybloom.com" />
+  <meta property="og:site_name" content="calmlybloom" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://calmlybloom.com" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9C%BF%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ——— palette ————————————————————————————————————————————————— */
+    :root {
+      --bone:   #ebe3d2;   /* page background */
+      --dun:    #ccbfa3;   /* secondary surfaces, rules, muted */
+      --sage:   #a3b18a;   /* soft accent */
+      --reseda: #7b8e5f;   /* primary accent — CTAs, links */
+      --reseda-dark: #5e6e44;
+      --ebony:  #2b2b26;   /* primary text */
+      --ebony-soft: #4a4a42;
+
+      --measure: 38rem;        /* ideal reading column */
+      --measure-wide: 52rem;   /* slightly wider for hero */
+      --pad: clamp(1.25rem, 4vw, 2rem);
+
+      --font-display: "Fraunces", "Iowan Old Style", "Apple Garamond", Georgia, serif;
+      --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bone);
+      color: var(--ebony);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      font-feature-settings: "kern", "liga", "calt";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media (min-width: 700px) {
+      body { font-size: 18px; }
+    }
+
+    /* ——— typography ————————————————————————————————————————————— */
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      margin: 0 0 0.6em;
+      color: var(--ebony);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.25rem);
+      line-height: 1.02;
+      font-variation-settings: "opsz" 144, "SOFT" 50;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.15rem);
+      line-height: 1.15;
+      margin-top: 0;
+      font-variation-settings: "opsz" 72;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 0.25em;
+      font-family: var(--font-body);
+      letter-spacing: -0.005em;
+    }
+
+    p { margin: 0 0 1.2em; }
+    p:last-child { margin-bottom: 0; }
+
+    em { font-style: italic; }
+
+    a {
+      color: var(--reseda-dark);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+      text-decoration-thickness: 1px;
+      transition: color 120ms ease;
+    }
+    a:hover { color: var(--ebony); }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--dun);
+      margin: 4rem 0;
+      max-width: var(--measure);
+    }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--reseda-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .muted { color: var(--ebony-soft); }
+
+    /* ——— layout ————————————————————————————————————————————————— */
+    .wrap {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    .wrap-wide {
+      max-width: var(--measure-wide);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    section { padding: 3.5rem 0; }
+    @media (min-width: 700px) { section { padding: 5rem 0; } }
+
+    /* ——— top bar ————————————————————————————————————————————————— */
+    .topbar {
+      padding: 1.5rem var(--pad);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--measure-wide);
+      margin: 0 auto;
+    }
+    .brand {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.15rem;
+      color: var(--ebony);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .brand .dot { color: var(--reseda); }
+    .topbar nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .topbar nav a {
+      color: var(--ebony-soft);
+      text-decoration: none;
+    }
+    .topbar nav a:hover { color: var(--ebony); }
+    @media (max-width: 560px) {
+      .topbar nav { display: none; }
+    }
+
+    /* ——— hero ——————————————————————————————————————————————————— */
+    .hero {
+      padding: 1.5rem 0 4rem;
+    }
+    @media (min-width: 700px) {
+      .hero { padding: 3rem 0 5.5rem; }
+    }
+
+    .hero .lede {
+      font-size: 1.15rem;
+      color: var(--ebony-soft);
+      max-width: 32rem;
+      margin-bottom: 2.25rem;
+    }
+    @media (min-width: 700px) {
+      .hero .lede { font-size: 1.25rem; }
+    }
+
+    .video {
+      margin-top: 3rem;
+      aspect-ratio: 16 / 9;
+      background: var(--ebony);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px -25px rgba(43,43,38,0.35);
+    }
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* ——— CTAs ——————————————————————————————————————————————————— */
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.4rem;
+      font-family: var(--font-body);
+      font-size: 0.98rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 999px;
+      transition: background 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+      line-height: 1;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--reseda);
+      color: var(--bone);
+    }
+    .btn-primary:hover {
+      background: var(--reseda-dark);
+      color: var(--bone);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px -6px rgba(94,110,68,0.5);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--ebony);
+      border-color: var(--ebony);
+    }
+    .btn-secondary:hover {
+      background: var(--ebony);
+      color: var(--bone);
+    }
+
+    .btn .arrow { font-size: 1.1em; transition: transform 150ms ease; }
+    .btn:hover .arrow { transform: translateX(2px); }
+
+    /* ——— grids ————————————————————————————————————————————————— */
+    .two-col {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 700px) {
+      .two-col { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    }
+
+    .two-col h3 {
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--dun);
+      margin-bottom: 1rem;
+    }
+
+    /* ——— numbered steps ————————————————————————————————————————— */
+    ol.steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: step;
+    }
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 2.75rem;
+      margin-bottom: 1.5rem;
+    }
+    ol.steps li::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: var(--reseda-dark);
+      letter-spacing: 0.05em;
+    }
+    ol.steps li strong {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+      font-size: 1.05rem;
+    }
+
+    /* ——— FAQ ——————————————————————————————————————————————————— */
+    details.faq {
+      border-bottom: 1px solid var(--dun);
+      padding: 1.25rem 0;
+    }
+    details.faq:first-of-type { border-top: 1px solid var(--dun); }
+    details.faq summary {
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--ebony);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    details.faq summary::-webkit-details-marker { display: none; }
+    details.faq summary::after {
+      content: "+";
+      font-family: var(--font-body);
+      font-weight: 400;
+      color: var(--reseda-dark);
+      font-size: 1.3rem;
+      transition: transform 200ms ease;
+      flex-shrink: 0;
+    }
+    details.faq[open] summary::after {
+      content: "–";
+      transform: none;
+    }
+    details.faq .faq-body {
+      padding-top: 0.85rem;
+      color: var(--ebony-soft);
+      font-size: 0.98rem;
+    }
+
+    /* ——— signature card ————————————————————————————————————————— */
+    .sig {
+      background: rgba(204, 191, 163, 0.25);
+      border: 1px solid var(--dun);
+      border-radius: 6px;
+      padding: 1.75rem;
+      margin-top: 2rem;
+    }
+
+    /* ——— footer ———————————————————————————————————————————————— */
+    footer {
+      padding: 4rem var(--pad) 3rem;
+      border-top: 1px solid var(--dun);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--ebony-soft);
+    }
+    footer .wrap-wide {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    @media (min-width: 700px) {
+      footer .wrap-wide { grid-template-columns: 2fr 1fr; }
+    }
+    footer h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: var(--ebony);
+      margin-bottom: 0.5rem;
+    }
+    footer a {
+      color: var(--ebony-soft);
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .disclaimer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--dun);
+      font-size: 0.8rem;
+      color: var(--ebony-soft);
+      opacity: 0.9;
+      max-width: var(--measure);
+    }
+
+    /* ——— tiny botanical mark ————————————————————————————————— */
+    .mark {
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--reseda);
+      display: inline-block;
+      transform: translateY(1px);
+    }
+
+    /* ——— responsive tweaks ————————————————————————————————————— */
+    @media (max-width: 560px) {
+      h1 { letter-spacing: -0.02em; }
+      .btn { width: 100%; justify-content: center; }
+      .cta-group { flex-direction: column; align-items: stretch; }
+    }
+
+    /* ——— reduced motion ————————————————————————————————————————— */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="#" class="brand">calmlybloom<span class="dot">.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#call">The call</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- ——— HERO ————————————————————————————————————————————————— -->
+  <section class="hero wrap-wide">
+    <p class="eyebrow">A softer way into crypto</p>
+
+    <h1>Calm, <em>not</em> complicated.</h1>
+
+    <p class="lede">
+      I'm Laura. Mom, Cape Town local, and someone who quietly found her way into crypto without the noise. If you've been curious but kept hitting walls of jargon and hype, the first step is just a conversation.
+    </p>
+
+    <div class="cta-group">
+      <a class="btn btn-primary" href="__CALENDLY_URL__" target="_blank" rel="noopener">
+        Book a free 30-min call <span class="arrow">→</span>
+      </a>
+      <a class="btn btn-secondary" href="__WHATSAPP_URL__" target="_blank" rel="noopener">
+        Or WhatsApp me
+      </a>
+    </div>
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/8ASnNp1HkjA?rel=0&modestbranding=1&color=white"
+        title="A note from Laura"
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHAT THIS IS ————————————————————————————————————————— -->
+  <section class="wrap">
+    <p class="eyebrow">What this is (and isn't)</p>
+    <h2>Not another crypto pitch.</h2>
+
+    <p>
+      No signals. No tips. No "just trust me" tables of green numbers. No guarantees of any returns, ever. This isn't a trading service and I'm not a financial advisor.
+    </p>
+
+    <p>
+      What I am is someone who walked into crypto as a complete outsider, asked a lot of dumb questions, made a lot of small mistakes, and slowly built a relationship with it that feels manageable. Not exciting. Not dramatic. <em>Manageable.</em> That's the part nobody seems to talk about.
+    </p>
+
+    <p>
+      If you're curious about crypto but every resource you've opened so far has felt like it was written by a 22-year-old shouting from a Lamborghini, this is the opposite of that.
+    </p>
+  </section>
+
+  <!-- ——— THE CALL ——————————————————————————————————————————— -->
+  <section class="wrap" id="call">
+    <p class="eyebrow">The free call</p>
+    <h2>What a 30-minute conversation looks like.</h2>
+
+    <p>
+      The call is free, no pressure, and exists for one reason: so you can work out if this is for you. Here's what happens, start to finish.
+    </p>
+
+    <ol class="steps">
+      <li>
+        <strong>You tell me where you're at.</strong>
+        What's got you curious. What's making you hesitant. What you've already tried (if anything).
+      </li>
+      <li>
+        <strong>I ask more questions than I answer.</strong>
+        The first 20 minutes are about understanding your situation — your goals, your comfort with risk, your timeline, what "financial independence" actually looks like for you.
+      </li>
+      <li>
+        <strong>I show you one real example.</strong>
+        Something concrete — how a specific decision might play out, with real numbers, in a way you can follow.
+      </li>
+      <li>
+        <strong>You decide what's next.</strong>
+        Maybe that's joining a community I work with. Maybe it's a resource list and us parting ways. Maybe it's "let's talk again in a month." No sales close, no countdown offer.
+      </li>
+    </ol>
+
+    <div class="cta-group" style="margin-top: 2.5rem;">
+      <a class="btn btn-primary" href="__CALENDLY_URL__" target="_blank" rel="noopener">
+        Book a free call <span class="arrow">→</span>
+      </a>
+      <a class="btn btn-secondary" href="__WHATSAPP_URL__" target="_blank" rel="noopener">
+        WhatsApp first
+      </a>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHO THIS IS FOR ————————————————————————————————————— -->
+  <section class="wrap">
+    <p class="eyebrow">Who this is for</p>
+    <h2>The honest filter.</h2>
+
+    <div class="two-col">
+      <div>
+        <h3>You'll probably get something out of this if…</h3>
+        <p>You're curious about crypto but the usual rooms feel loud, gendered, or hostile to a real question.</p>
+        <p>You want financial options — not a side hustle, not a grind — and you're willing to learn something slowly.</p>
+        <p>You've been "going to look into this" for a year and want a warm, judgement-free starting point.</p>
+      </div>
+      <div>
+        <h3>This probably isn't for you if…</h3>
+        <p>You're looking for "what coin should I buy this week?" — I won't tell you, and neither should anyone else.</p>
+        <p>You want guaranteed returns or overnight results. Crypto isn't that, and anyone who says otherwise is selling you something.</p>
+        <p>You already trade actively and are looking for a signals service. That's a different kind of product.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— ABOUT ——————————————————————————————————————————————— -->
+  <section class="wrap" id="about">
+    <p class="eyebrow">A bit about me</p>
+    <h2>Laura, from Cape Town.</h2>
+
+    <p>
+      I'm a mom first. I didn't come from tech, I didn't come from finance, and I had exactly zero interest in being the loudest person in any room. Crypto happened to me slowly — one honest conversation at a time, with people who were patient with my questions.
+    </p>
+
+    <p>
+      What I noticed, and what still bothers me, is that most of the door into this world has been guarded by men in Lamborghinis and 19-year-olds screaming about "cycles." There's a quieter, more practical version of this story. It involves risk management, slow decisions, and the freedom to build something on your own terms — not as a side grind, but as part of a softer, more unhurried life.
+    </p>
+
+    <p>
+      My goal on this call isn't to convert you. It's to give you the conversation I wish I'd had on day one.
+    </p>
+
+    <div class="sig">
+      <p style="margin: 0;">
+        <span class="mark">✿</span> <em>If any of this sounds like what you've been looking for, I'd love to hear from you.</em>
+      </p>
+      <div class="cta-group" style="margin-top: 1.25rem;">
+        <a class="btn btn-primary" href="__CALENDLY_URL__" target="_blank" rel="noopener">
+          Book a free call <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— FAQ ———————————————————————————————————————————————— -->
+  <section class="wrap" id="faq">
+    <p class="eyebrow">Frequently, gently asked</p>
+    <h2>Questions people actually ask on the phone.</h2>
+
+    <details class="faq">
+      <summary>Is this a scam?</summary>
+      <div class="faq-body">
+        <p>Honest answer: I'd be suspicious too. The free call is 30 minutes, on video, with a real person (me). I don't ask for money, card details, or any financial information on the call. If at the end of it I think there's a community or resource that would suit you, I'll mention it — and that mention is the only thing you'd ever pay me for, and only if you opted in afterwards. If nothing fits, we part ways and you've lost 30 minutes.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Are you a licensed financial advisor?</summary>
+      <div class="faq-body">
+        <p>No. I'm explicitly <em>not</em> a licensed financial services provider and I don't give regulated financial advice. What I share is personal experience and educational context. Any actual financial decision you make is yours; for regulated advice, speak to a licensed FSP registered with the South African FSCA.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>How much money do I need to have to talk to you?</summary>
+      <div class="faq-body">
+        <p>None, for the call. The call is free. What you choose to do after the call is entirely up to you, and there are paths in that don't require a large starting amount.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>I've never used crypto. Is this too early?</summary>
+      <div class="faq-body">
+        <p>It's actually the better time. The conversation is easier when you don't have habits or assumptions to unwind. Come with your questions and nothing else.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>What does "managing risk" actually mean here?</summary>
+      <div class="faq-body">
+        <p>It means deciding in advance how much you're willing to lose, how you'll know when something's not working, and what part of your life crypto is and isn't allowed to touch. It's boring on purpose. We'll talk about it on the call.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Is this only for women?</summary>
+      <div class="faq-body">
+        <p>The tone and the people I've mostly worked with skew female, but the conversation is open to anyone who resonates with the "calm, not complicated" framing.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ——— FOOTER ————————————————————————————————————————————— -->
+  <footer>
+    <div class="wrap-wide">
+      <div>
+        <h3>Ready to have the conversation?</h3>
+        <p style="margin-bottom: 1.25rem;">No forms. No newsletter. Just pick the one that feels easiest.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="__CALENDLY_URL__" target="_blank" rel="noopener">
+            Book a free call <span class="arrow">→</span>
+          </a>
+          <a class="btn btn-secondary" href="__WHATSAPP_URL__" target="_blank" rel="noopener">
+            WhatsApp me
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>calmlybloom<span style="color: var(--reseda);">.</span></h3>
+        <p style="margin: 0;">Laura · Cape Town, South Africa</p>
+        <p style="margin: 0.3rem 0 0;"><a href="mailto:hello@calmlybloom.com">hello@calmlybloom.com</a></p>
+      </div>
+    </div>
+
+    <div class="wrap-wide disclaimer">
+      <p>
+        This website is for educational and informational purposes only. It does not constitute financial, investment, tax, or legal advice, and nothing on it should be treated as a recommendation to buy, sell, or hold any asset. Cryptocurrencies are volatile and you can lose money. Before making any financial decision, consult a professional who is licensed and regulated in your jurisdiction (in South Africa, an FSP registered with the FSCA). You are responsible for your own choices.
+      </p>
+      <p style="margin-top: 0.75rem;">© <span id="year">2026</span> calmlybloom · Built with calm.</p>
+    </div>
+  </footer>
+
+  <script>
+    // tiny, no-framework niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
