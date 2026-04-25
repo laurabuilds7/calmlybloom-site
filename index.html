@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
 
-  <title>calmlybloom — a softer way into crypto</title>
-  <meta name="description" content="A judgement-free way into crypto for women who want real financial options — not another grind. I'm Laura. The first step is a free conversation." />
+  <title>calmlybloom — a softer way to learn about crypto</title>
+  <meta name="description" content="A personal, educational conversation about crypto with someone who once stood exactly where you are. Not financial advice. Not an FSP. Just a free chat." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="calmlybloom — a softer way into crypto" />
-  <meta property="og:description" content="A calm, judgement-free conversation about crypto with someone who once stood exactly where you are." />
+  <meta property="og:title" content="calmlybloom — a softer way to learn about crypto" />
+  <meta property="og:description" content="A calm, judgement-free educational conversation about crypto. Not financial advice." />
   <meta property="og:url" content="https://calmlybloom.com" />
   <meta property="og:site_name" content="calmlybloom" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +43,11 @@
 
     *, *::before, *::after { box-sizing: border-box; }
 
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    html {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -55,6 +59,8 @@
       font-feature-settings: "kern", "liga", "calt";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
     }
 
     @media (min-width: 700px) {
@@ -70,14 +76,14 @@
     }
 
     h1 {
-      font-size: clamp(2.4rem, 6.8vw, 4.25rem);
-      line-height: 1.02;
+      font-size: clamp(2.2rem, 7vw, 4.25rem);
+      line-height: 1.04;
       font-variation-settings: "opsz" 144, "SOFT" 50;
     }
 
     h2 {
-      font-size: clamp(1.6rem, 3.5vw, 2.15rem);
-      line-height: 1.15;
+      font-size: clamp(1.55rem, 3.5vw, 2.15rem);
+      line-height: 1.18;
       margin-top: 0;
       font-variation-settings: "opsz" 72;
     }
@@ -114,7 +120,7 @@
 
     .eyebrow {
       font-family: var(--font-body);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 500;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -135,17 +141,21 @@
       margin: 0 auto;
       padding: 0 var(--pad);
     }
-    section { padding: 3.5rem 0; }
+    section { padding: 3rem 0; }
     @media (min-width: 700px) { section { padding: 5rem 0; } }
 
     /* ——— top bar ————————————————————————————————————————————————— */
     .topbar {
-      padding: 1.5rem var(--pad);
+      padding: 1.25rem var(--pad);
+      padding-top: max(1.25rem, env(safe-area-inset-top, 0));
+      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
+      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
       display: flex;
       align-items: center;
       justify-content: space-between;
       max-width: var(--measure-wide);
       margin: 0 auto;
+      gap: 0.75rem;
     }
     .brand {
       font-family: var(--font-display);
@@ -154,6 +164,7 @@
       color: var(--ebony);
       text-decoration: none;
       letter-spacing: -0.01em;
+      flex-shrink: 0;
     }
     .brand .dot { color: var(--reseda); }
     .topbar nav {
@@ -164,9 +175,13 @@
     .topbar nav a {
       color: var(--ebony-soft);
       text-decoration: none;
+      white-space: nowrap;
     }
     .topbar nav a:hover { color: var(--ebony); }
     @media (max-width: 560px) {
+      .topbar nav { gap: 1rem; font-size: 0.82rem; }
+    }
+    @media (max-width: 379px) {
       .topbar nav { display: none; }
     }
 
@@ -175,13 +190,13 @@
     @media (min-width: 700px) { .hero { padding: 3rem 0 5.5rem; } }
 
     .hero .lede {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: var(--ebony-soft);
       max-width: 32rem;
-      margin-bottom: 2.25rem;
+      margin-bottom: 2rem;
     }
     @media (min-width: 700px) {
-      .hero .lede { font-size: 1.25rem; }
+      .hero .lede { font-size: 1.25rem; margin-bottom: 2.25rem; }
     }
 
     .video {
@@ -191,6 +206,9 @@
       border-radius: 4px;
       overflow: hidden;
       box-shadow: 0 30px 60px -25px rgba(43,43,38,0.35);
+    }
+    @media (max-width: 560px) {
+      .video { box-shadow: 0 12px 28px -14px rgba(43,43,38,0.28); }
     }
     .video iframe {
       width: 100%;
@@ -215,17 +233,20 @@
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
-      padding: 0.85rem 1.4rem;
+      padding: 0.9rem 1.4rem;
+      min-height: 48px;
       font-family: var(--font-body);
       font-size: 0.98rem;
       font-weight: 500;
       text-decoration: none;
       border-radius: 999px;
       transition: background 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
-      line-height: 1;
+      line-height: 1.1;
       border: 1px solid transparent;
       cursor: pointer;
+      text-align: center;
     }
     .btn-primary {
       background: var(--reseda);
@@ -255,6 +276,14 @@
     }
     .cta-meta span { white-space: nowrap; }
 
+    .cta-disclaimer {
+      margin-top: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--ebony-soft);
+      font-style: italic;
+      opacity: 0.9;
+    }
+
     /* ——— two col ——————————————————————————————————————————————— */
     .two-col {
       display: grid;
@@ -270,10 +299,10 @@
       margin-bottom: 1rem;
     }
 
-    /* ——— numbered cards (fears, journey) ———————————————————————— */
+    /* ——— numbered cards ————————————————————————————————————————— */
     .cards {
       display: grid;
-      gap: 1.5rem;
+      gap: 1.25rem;
       grid-template-columns: 1fr;
       margin: 2rem 0;
     }
@@ -306,7 +335,7 @@
       margin: 0;
     }
 
-    /* ——— numbered steps (vertical, used for journey) ————————————— */
+    /* ——— numbered steps ———————————————————————————————————————— */
     ol.steps {
       list-style: none;
       padding: 0;
@@ -352,6 +381,30 @@
       font-style: italic;
     }
 
+    /* ——— important notice ————————————————————————————————————— */
+    .notice-box {
+      background: rgba(204, 191, 163, 0.30);
+      border: 1px solid var(--dun);
+      border-left: 3px solid var(--reseda);
+      border-radius: 6px;
+      padding: 1.75rem;
+      margin-top: 1.5rem;
+    }
+    @media (min-width: 700px) {
+      .notice-box { padding: 2.25rem 2.5rem; }
+    }
+    .notice-box p { font-size: 0.95rem; }
+    .notice-box strong { color: var(--ebony); }
+    .notice-box ul {
+      margin: 0 0 1.2em;
+      padding-left: 1.25rem;
+    }
+    .notice-box ul li {
+      font-size: 0.95rem;
+      color: var(--ebony-soft);
+      margin-bottom: 0.5em;
+    }
+
     /* ——— FAQ ——————————————————————————————————————————————————— */
     details.faq {
       border-bottom: 1px solid var(--dun);
@@ -370,6 +423,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+      min-height: 32px;
     }
     details.faq summary::-webkit-details-marker { display: none; }
     details.faq summary::after {
@@ -400,6 +454,9 @@
     /* ——— footer ———————————————————————————————————————————————— */
     footer {
       padding: 4rem var(--pad) 3rem;
+      padding-bottom: max(3rem, calc(env(safe-area-inset-bottom, 0) + 2rem));
+      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
+      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
       border-top: 1px solid var(--dun);
       margin-top: 3rem;
       font-size: 0.9rem;
@@ -426,15 +483,17 @@
       display: inline-block;
       margin-right: 1rem;
     }
-    .disclaimer {
+    .footer-disclaimer {
       margin-top: 2rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--dun);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--ebony-soft);
-      opacity: 0.9;
+      opacity: 0.95;
       max-width: var(--measure);
+      line-height: 1.55;
     }
+    .footer-disclaimer strong { color: var(--ebony); }
 
     .mark {
       font-family: var(--font-display);
@@ -446,7 +505,7 @@
 
     @media (max-width: 560px) {
       h1 { letter-spacing: -0.02em; }
-      .btn { width: 100%; justify-content: center; }
+      .btn { width: 100%; }
       .cta-group { flex-direction: column; align-items: stretch; }
     }
 
@@ -467,13 +526,14 @@
       <a href="#fears">Why now</a>
       <a href="#call">The call</a>
       <a href="#about">About</a>
+      <a href="#notice">Notice</a>
       <a href="#faq">FAQ</a>
     </nav>
   </header>
 
   <!-- ——— HERO ————————————————————————————————————————————————— -->
   <section class="hero wrap-wide">
-    <p class="eyebrow">A softer way into crypto</p>
+    <p class="eyebrow">A softer way to learn about crypto</p>
 
     <h1>Calm, <em>not</em> complicated.</h1>
 
@@ -483,7 +543,7 @@
 
     <div class="cta-group">
       <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        Book a free 30-min call <span class="arrow">→</span>
+        Book a free 30-min chat <span class="arrow">→</span>
       </a>
       <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site%20and%20I%27d%20love%20to%20chat." target="_blank" rel="noopener">
         Or WhatsApp me
@@ -492,10 +552,13 @@
     <p class="cta-meta">
       <span>No credit card.</span> &nbsp;·&nbsp; <span>Zero pressure.</span> &nbsp;·&nbsp; <span>I'll be on time.</span>
     </p>
+    <p class="cta-disclaimer">
+      An educational conversation only. Not financial advice. <a href="#notice">Read the full notice.</a>
+    </p>
 
     <div class="video">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/8ASnNp1HkjA?rel=0&modestbranding=1&color=white"
+        src="https://www.youtube-nocookie.com/embed/8ASnNp1HkjA?rel=0&modestbranding=1&color=white&playsinline=1"
         title="A note from Laura"
         loading="lazy"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -514,7 +577,7 @@
     <h2>Crypto feels scary. And honestly? That's completely valid.</h2>
 
     <p>
-      I am not going to pretend the reasons people stay out of this world aren't real. They are. So before we talk about what's possible, here are the three walls I see people hit, and what we do about each of them.
+      I am not going to pretend the reasons people stay out of this world aren't real. They are. Three walls I see people hit, and what we'll talk through if you book a chat.
     </p>
 
     <div class="cards cards-3">
@@ -526,22 +589,22 @@
       <div class="card">
         <div class="num">02</div>
         <h3>The volatility is genuinely frightening.</h3>
-        <p>Up 40%, down 60%, up again overnight. Without a real plan and someone calmer than the market guiding you, it feels like a rollercoaster with no seatbelt.</p>
+        <p>Prices swing wildly, sometimes overnight. Without a calm framing and someone who's sat through it before, it can feel like a rollercoaster with no seatbelt.</p>
       </div>
       <div class="card">
         <div class="num">03</div>
         <h3>The scams have made trust nearly impossible.</h3>
-        <p>Everyone's promising the moon and disappearing with the money. The mistrust isn't paranoia — it's a rational response to a space that has badly let people down.</p>
+        <p>So many promises, so many vanished funds. The mistrust isn't paranoia — it's a rational response to a space that has badly let people down.</p>
       </div>
     </div>
 
     <div class="callout">
-      You don't need to become a crypto expert. You just need to walk in with someone who already is.
+      You don't need to become a crypto expert. You just need a calm starting point and someone honest to think out loud with.
     </div>
 
     <div class="cta-group">
       <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        I'm ready to talk <span class="arrow">→</span>
+        I'm ready to chat <span class="arrow">→</span>
       </a>
     </div>
   </section>
@@ -552,15 +615,15 @@
     <h2>Not another crypto pitch.</h2>
 
     <p>
-      No signals. No tips. No "just trust me" tables of green numbers. No guarantees of any returns, ever. This isn't a trading service and I'm not a licensed financial advisor.
+      No signals. No tips. No "just trust me" tables of green numbers. No promises or guarantees of any returns of any kind, ever. This is not a trading service. It is not investment advice. I am not a licensed financial advisor and I am not a registered Financial Services Provider.
     </p>
 
     <p>
-      What I am is someone who walked into crypto as a complete outsider, asked a lot of beginner questions, made a lot of small mistakes, and slowly built a relationship with it that feels manageable. Not exciting. Not dramatic. <em>Manageable.</em> That's the part nobody seems to talk about.
+      What I am is someone who walked into crypto as a complete outsider, asked a lot of beginner questions, made a lot of small mistakes, and slowly built a relationship with it that feels manageable. Not exciting. Not dramatic. <em>Manageable.</em> That is the part nobody seems to talk about.
     </p>
 
     <p>
-      If you're curious about crypto but every resource you've opened so far has felt like it was written by a 22-year-old shouting from a Lamborghini, this is the opposite of that.
+      If you are curious about crypto but every resource you have opened so far felt like it was written by a 22-year-old shouting from a Lamborghini, this is the opposite of that.
     </p>
   </section>
 
@@ -568,11 +631,11 @@
 
   <!-- ——— THE CALL ——————————————————————————————————————————— -->
   <section class="wrap" id="call">
-    <p class="eyebrow">The free call</p>
+    <p class="eyebrow">The free chat</p>
     <h2>What a 30-minute conversation looks like.</h2>
 
     <p>
-      The call is free, it's on Zoom or WhatsApp, no slides, no pitch deck. Here's what happens, start to finish.
+      The chat is free, it's on Zoom or WhatsApp, no slides, no pitch deck. Here is what happens, start to finish.
     </p>
 
     <ol class="steps">
@@ -582,21 +645,21 @@
       </li>
       <li>
         <strong>I ask more questions than I answer.</strong>
-        <p>The first 20 minutes are about understanding your situation — your goals, your comfort with risk, your timeline, what financial freedom actually looks like for you. Not a generic version of it. Yours.</p>
+        <p>The first part is about understanding your situation — your goals, your comfort with uncertainty, your timeline, what financial freedom actually looks like for you. Not a generic version of it. Yours.</p>
       </li>
       <li>
-        <strong>I show you one real example.</strong>
-        <p>Something concrete — how a specific decision might play out, with real numbers, in plain language you can follow.</p>
+        <strong>I share what learning looks like, in plain language.</strong>
+        <p>Conceptual, never prescriptive. The point is to give you a feel for how I think about all of this — not to tell you what to do with your money. Specific decisions about specific assets are not part of this conversation.</p>
       </li>
       <li>
         <strong>You decide what's next.</strong>
-        <p>Maybe that's joining a small community I work alongside. Maybe it's a short resource list and us parting ways. Maybe it's "let's talk again in a month." No sales close. No countdown timer. No upsell at the door.</p>
+        <p>Maybe that's an educational community I think you'd find calming and clear. Maybe it's a short reading list and us parting ways. Maybe it's "let's talk again in a month." No sales close, no countdown timer, no upsell at the door.</p>
       </li>
     </ol>
 
     <div class="cta-group" style="margin-top: 2.5rem;">
       <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        Book a free call <span class="arrow">→</span>
+        Book a free chat <span class="arrow">→</span>
       </a>
       <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20chat%20before%20booking." target="_blank" rel="noopener">
         WhatsApp first
@@ -615,14 +678,14 @@
       <div>
         <h3>You'll probably get something out of this if…</h3>
         <p>You're curious about crypto but the usual rooms feel loud, gendered, or hostile to a real beginner question.</p>
-        <p>You want financial options — not a side hustle, not a grind — and you're willing to learn something slowly, the right way.</p>
+        <p>You want options for your future — not a side hustle, not a grind — and you're willing to learn something slowly.</p>
         <p>You've been "going to look into this" for a year and want a warm, judgement-free starting point.</p>
       </div>
       <div>
         <h3>This probably isn't for you if…</h3>
         <p>You're looking for "what coin should I buy this week?" — I won't tell you, and neither should anyone else who's being honest.</p>
-        <p>You want guaranteed returns or overnight results. Crypto isn't that, and anyone who says otherwise is selling you something.</p>
-        <p>You already trade actively and are looking for a signals service. That's a different kind of product, and there are plenty of them.</p>
+        <p>You want guaranteed returns or overnight results. Crypto is not that, and anyone who says otherwise is selling you something.</p>
+        <p>You already trade actively and are looking for a signals service. That's a different kind of product, and I am not it.</p>
       </div>
     </div>
   </section>
@@ -637,11 +700,11 @@
     </p>
 
     <p>
-      What I noticed, and what still bothers me, is that most of the door into this world has been guarded by men in expensive cars and 19-year-olds yelling about "cycles." There is a quieter, more practical version of this story. It involves risk management, slow decisions, and the freedom to build something on your own terms — not as a side grind, but as part of a softer, more unhurried life.
+      What I noticed, and what still bothers me, is that most of the door into this world has been guarded by men in expensive cars and 19-year-olds yelling about "cycles." There is a quieter, more practical version of this story. It involves patience, slow learning, being honest with yourself about what you can afford to lose, and the freedom to build something on your own terms — not as a side grind, but as part of a softer, more unhurried life.
     </p>
 
     <p>
-      My goal on the call isn't to convert you. It's to give you the conversation I wish I'd had on day one — the one that would have saved me a year of wondering whether this was for me.
+      My goal on the chat isn't to convert you. It's to give you the conversation I wish I'd had on day one — the one that would have saved me a year of wondering whether this was for me.
     </p>
 
     <div class="sig">
@@ -650,12 +713,53 @@
       </p>
       <div class="cta-group" style="margin-top: 1.25rem;">
         <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-          Book a free call <span class="arrow">→</span>
+          Book a free chat <span class="arrow">→</span>
         </a>
         <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
           WhatsApp me
         </a>
       </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— IMPORTANT NOTICE ————————————————————————————————————— -->
+  <section class="wrap" id="notice">
+    <p class="eyebrow">Plain truth in plain language</p>
+    <h2>Read this before you book.</h2>
+
+    <p>
+      I'm putting this in the middle of the page on purpose. Most websites bury this kind of thing in a font so tiny no one ever sees it. I'd rather you read it now and decide whether the conversation makes sense for you.
+    </p>
+
+    <div class="notice-box">
+      <p><strong>What this site is:</strong> a personal page where I share what I have learned about crypto from sitting with it for a while, and an invitation to have a free educational conversation.</p>
+
+      <p><strong>What this site and the free conversation are not:</strong></p>
+      <ul>
+        <li>financial, investment, tax, accounting, or legal advice;</li>
+        <li>a recommendation, endorsement, solicitation, offer, or invitation to buy, sell, hold, subscribe to, or invest in any cryptocurrency, digital asset, security, derivative, or any other financial product;</li>
+        <li>a "financial service" or "intermediary service" as those terms are defined under the South African Financial Advisory and Intermediary Services Act, 2002 ("FAIS Act");</li>
+        <li>the activities of an authorised Financial Services Provider ("FSP") regulated by the South African Financial Sector Conduct Authority ("FSCA");</li>
+        <li>portfolio management, signal services, copy-trading, or any form of discretionary investment management.</li>
+      </ul>
+
+      <p>
+        I am <strong>not</strong> a licensed FSP. I am <strong>not</strong> a registered financial advisor. I do <strong>not</strong> hold myself out as either. I do not provide intermediary services and I do not offer or distribute financial products. The free conversation I offer through this site is a personal, educational chat. Nothing said on it should be relied on as advice.
+      </p>
+
+      <p>
+        Cryptocurrencies and crypto assets are highly volatile and speculative. You can — and many people do — lose money, including the entire amount you put in. Past behaviour of any asset is not indicative of future performance. <strong>No outcomes, returns, or results of any kind are promised, implied, projected, or guaranteed.</strong>
+      </p>
+
+      <p>
+        Before making any financial decision, consult a person who is appropriately licensed and regulated to give that advice in your jurisdiction. In South Africa, that is an FSP registered with the FSCA. You are solely responsible for any decision you make as a result of reading this site, watching the video, or speaking with me.
+      </p>
+
+      <p style="margin-bottom: 0;">
+        By booking the free chat or contacting me, you confirm that you understand and accept this notice in full.
+      </p>
     </div>
   </section>
 
@@ -669,49 +773,49 @@
     <details class="faq">
       <summary>Is this a scam?</summary>
       <div class="faq-body">
-        <p>Honest answer: I'd be suspicious too. The free call is 30 minutes, on video, with a real person — me. I don't ask for money, card details, or any financial information on the call. If at the end I think there's a community or resource that would suit you, I'll mention it — and that mention is the only thing you'd ever pay for, only if you opted in afterwards. If nothing fits, we part ways and you've lost 30 minutes.</p>
+        <p>Honest answer: I would be suspicious too. The free chat is 30 minutes, on video, with a real person — me. I don't ask for money, card details, or any financial information on the chat. If at the end I think there's an educational community or resource you might enjoy, I'll mention it. Whether you ever do anything with that suggestion is entirely your call. If nothing fits, we part ways and you've spent 30 minutes.</p>
       </div>
     </details>
 
     <details class="faq">
       <summary>Are you a licensed financial advisor?</summary>
       <div class="faq-body">
-        <p>No. I'm explicitly <em>not</em> a licensed financial services provider and I don't give regulated financial advice. What I share is personal experience and educational context. Any actual financial decision you make is yours; for regulated advice, speak to a licensed FSP registered with the South African FSCA (or the equivalent regulator in your country).</p>
+        <p>No. I am explicitly <em>not</em> a licensed Financial Services Provider, I am <em>not</em> a registered financial advisor, and I do <em>not</em> give regulated financial advice. Anything I share — on a chat, on this site, anywhere — is personal experience and general educational context. Every financial decision you make is yours alone. For any regulated advice, speak to a licensed FSP registered with the South African FSCA (or the equivalent regulator in your country).</p>
       </div>
     </details>
 
     <details class="faq">
       <summary>How much money do I need to have to talk to you?</summary>
       <div class="faq-body">
-        <p>None, for the call. The call is free. What you choose to do after the call is entirely up to you, and there are paths in that don't require a large starting amount.</p>
+        <p>None, for the chat. The chat is free. What you choose to do afterwards is entirely up to you, and the chat itself does not require, request, or involve any financial commitment.</p>
       </div>
     </details>
 
     <details class="faq">
       <summary>I've never used crypto. Is this too early?</summary>
       <div class="faq-body">
-        <p>It's actually the better time. The conversation is easier when you don't have habits or assumptions to unwind. Come with your questions and nothing else.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>What does "managing risk" actually mean here?</summary>
-      <div class="faq-body">
-        <p>It means deciding in advance how much you're willing to lose, how you'll know when something's not working, and what part of your life crypto is and isn't allowed to touch. It's deliberately boring. We'll talk about it on the call.</p>
+        <p>It is actually a better time. The conversation is easier when you don't have habits or assumptions to unwind. Come with your questions and nothing else.</p>
       </div>
     </details>
 
     <details class="faq">
       <summary>Are you alone, or do you work with a team?</summary>
       <div class="faq-body">
-        <p>I work alongside a small group of people who've been navigating crypto markets longer than I have. The call is just with me. If we decide to keep working together after, you'd meet the others gradually — never thrown into a Discord and forgotten.</p>
+        <p>I learn alongside a small group of people who have been around crypto longer than I have. The chat is just with me. If you ever decide to join the educational community I am part of, you would meet the others gradually — never thrown into a Discord and forgotten. Joining any community is your decision and is unrelated to the free chat.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Will you tell me what to invest in?</summary>
+      <div class="faq-body">
+        <p>No. Specific investment decisions about specific assets are not part of this conversation, ever. If you want that kind of advice, please speak with a licensed Financial Services Provider in your jurisdiction.</p>
       </div>
     </details>
 
     <details class="faq">
       <summary>Is this only for women?</summary>
       <div class="faq-body">
-        <p>The tone and the people I've mostly worked with skew female, but the conversation is open to anyone who resonates with the "calm, not complicated" framing.</p>
+        <p>The tone and the people I have mostly talked with skew female, but the conversation is open to anyone who resonates with the "calm, not complicated" framing.</p>
       </div>
     </details>
   </section>
@@ -724,7 +828,7 @@
         <p style="margin-bottom: 1.25rem;">No forms. No newsletter. Pick whichever feels easiest.</p>
         <div class="cta-group">
           <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-            Book a free call <span class="arrow">→</span>
+            Book a free chat <span class="arrow">→</span>
           </a>
           <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
             WhatsApp me
@@ -738,11 +842,11 @@
       </div>
     </div>
 
-    <div class="wrap-wide disclaimer">
+    <div class="wrap-wide footer-disclaimer">
       <p>
-        This website is for educational and informational purposes only. It does not constitute financial, investment, tax, or legal advice, and nothing on it should be treated as a recommendation to buy, sell, or hold any asset. Cryptocurrencies are highly volatile and you can lose money, including your entire investment. Before making any financial decision, consult a professional who is licensed and regulated in your jurisdiction (in South Africa, an FSP registered with the FSCA). You are responsible for your own choices.
+        <strong>Important — please read.</strong> This website and any conversation arising from it are for general educational and informational purposes only. They do not constitute, and must not be interpreted as, financial, investment, tax, accounting, or legal advice, nor as a recommendation, endorsement, solicitation, offer, or invitation to buy, sell, hold, or invest in any cryptocurrency, digital asset, security, or any other financial product. The author of this site is <strong>not</strong> a licensed Financial Services Provider, is <strong>not</strong> a registered financial advisor, and does <strong>not</strong> provide intermediary services as defined under the South African Financial Advisory and Intermediary Services Act, 2002 (FAIS Act). The author is <strong>not</strong> regulated by the South African Financial Sector Conduct Authority (FSCA). Cryptocurrencies are highly volatile and speculative; you can lose all of the money you put in. No returns or outcomes of any kind are promised, implied, projected, or guaranteed. Past behaviour is not indicative of future performance. Before making any financial decision, consult a person licensed and regulated to give that advice in your jurisdiction (in South Africa, an FSP registered with the FSCA). You are solely responsible for any decisions you make. By using this site or contacting the author, you confirm that you understand and accept this notice. <a href="#notice">Read the full notice ↑</a>
       </p>
-      <p style="margin-top: 0.75rem;">© <span id="year">2026</span> calmlybloom · Built with calm.</p>
+      <p style="margin-top: 0.75rem;">© <span id="year">2026</span> calmlybloom · Laura Weyel · Cape Town, South Africa.</p>
     </div>
   </footer>
 
