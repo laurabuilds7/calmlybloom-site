@@ -5,853 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
 
-  <title>calmlybloom — a softer way to learn about crypto</title>
-  <meta name="description" content="A personal, educational conversation about crypto with someone who once stood exactly where you are. Not financial advice. Not an FSP. Just a free chat." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="calmlybloom — a softer way to learn about crypto" />
-  <meta property="og:description" content="A calm, judgement-free educational conversation about crypto. Not financial advice." />
-  <meta property="og:url" content="https://calmlybloom.com" />
-  <meta property="og:site_name" content="calmlybloom" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <title>calmlybloom</title>
+  <meta name="description" content="calmlybloom — coming soon." />
+  <meta name="robots" content="noindex, nofollow" />
 
   <link rel="canonical" href="https://calmlybloom.com" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9C%BF%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..500&display=swap" rel="stylesheet" />
 
   <style>
-    /* ——— palette ————————————————————————————————————————————————— */
     :root {
-      --bone:   #ebe3d2;
-      --dun:    #ccbfa3;
-      --sage:   #a3b18a;
-      --reseda: #7b8e5f;
-      --reseda-dark: #5e6e44;
-      --ebony:  #2b2b26;
+      --bone:    #ebe3d2;
+      --reseda:  #7b8e5f;
+      --ebony:   #2b2b26;
       --ebony-soft: #4a4a42;
-
-      --measure: 38rem;
-      --measure-wide: 52rem;
-      --pad: clamp(1.25rem, 4vw, 2rem);
-
-      --font-display: "Fraunces", "Iowan Old Style", "Apple Garamond", Georgia, serif;
-      --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
 
-    html {
-      -webkit-text-size-adjust: 100%;
-      -webkit-tap-highlight-color: transparent;
-      scroll-behavior: smooth;
-    }
+    html, body { height: 100%; }
 
     body {
       margin: 0;
       background: var(--bone);
       color: var(--ebony);
-      font-family: var(--font-body);
-      font-size: 17px;
-      line-height: 1.65;
-      font-feature-settings: "kern", "liga", "calt";
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-feature-settings: "kern", "liga";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      overflow-x: hidden;
-    }
-
-    @media (min-width: 700px) {
-      body { font-size: 18px; }
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      font-weight: 400;
-      letter-spacing: -0.015em;
-      margin: 0 0 0.6em;
-      color: var(--ebony);
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 7vw, 4.25rem);
-      line-height: 1.04;
-      font-variation-settings: "opsz" 144, "SOFT" 50;
-    }
-
-    h2 {
-      font-size: clamp(1.55rem, 3.5vw, 2.15rem);
-      line-height: 1.18;
-      margin-top: 0;
-      font-variation-settings: "opsz" 72;
-    }
-
-    h3 {
-      font-size: 1.15rem;
-      font-weight: 500;
-      line-height: 1.3;
-      margin-bottom: 0.4em;
-      font-family: var(--font-body);
-      letter-spacing: -0.005em;
-    }
-
-    p { margin: 0 0 1.2em; }
-    p:last-child { margin-bottom: 0; }
-
-    em { font-style: italic; }
-
-    a {
-      color: var(--reseda-dark);
-      text-decoration: underline;
-      text-underline-offset: 0.15em;
-      text-decoration-thickness: 1px;
-      transition: color 120ms ease;
-    }
-    a:hover { color: var(--ebony); }
-
-    hr {
-      border: 0;
-      border-top: 1px solid var(--dun);
-      margin: 4rem auto;
-      max-width: var(--measure);
-    }
-
-    .eyebrow {
-      font-family: var(--font-body);
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--reseda-dark);
-      margin-bottom: 1.25rem;
-    }
-
-    .muted { color: var(--ebony-soft); }
-
-    /* ——— layout ————————————————————————————————————————————————— */
-    .wrap {
-      max-width: var(--measure);
-      margin: 0 auto;
-      padding: 0 var(--pad);
-    }
-    .wrap-wide {
-      max-width: var(--measure-wide);
-      margin: 0 auto;
-      padding: 0 var(--pad);
-    }
-    section { padding: 3rem 0; }
-    @media (min-width: 700px) { section { padding: 5rem 0; } }
-
-    /* ——— top bar ————————————————————————————————————————————————— */
-    .topbar {
-      padding: 1.25rem var(--pad);
-      padding-top: max(1.25rem, env(safe-area-inset-top, 0));
-      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
-      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
+      -webkit-tap-highlight-color: transparent;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: var(--measure-wide);
-      margin: 0 auto;
-      gap: 0.75rem;
-    }
-    .brand {
-      font-family: var(--font-display);
-      font-weight: 400;
-      font-size: 1.15rem;
-      color: var(--ebony);
-      text-decoration: none;
-      letter-spacing: -0.01em;
-      flex-shrink: 0;
-    }
-    .brand .dot { color: var(--reseda); }
-    .topbar nav {
-      display: flex;
-      gap: 1.5rem;
-      font-size: 0.95rem;
-    }
-    .topbar nav a {
-      color: var(--ebony-soft);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .topbar nav a:hover { color: var(--ebony); }
-    @media (max-width: 560px) {
-      .topbar nav { gap: 1rem; font-size: 0.82rem; }
-    }
-    @media (max-width: 379px) {
-      .topbar nav { display: none; }
-    }
-
-    /* ——— hero ——————————————————————————————————————————————————— */
-    .hero { padding: 1.5rem 0 4rem; }
-    @media (min-width: 700px) { .hero { padding: 3rem 0 5.5rem; } }
-
-    .hero .lede {
-      font-size: 1.1rem;
-      color: var(--ebony-soft);
-      max-width: 32rem;
-      margin-bottom: 2rem;
-    }
-    @media (min-width: 700px) {
-      .hero .lede { font-size: 1.25rem; margin-bottom: 2.25rem; }
-    }
-
-    .video {
-      margin-top: 3rem;
-      aspect-ratio: 16 / 9;
-      background: var(--ebony);
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 30px 60px -25px rgba(43,43,38,0.35);
-    }
-    @media (max-width: 560px) {
-      .video { box-shadow: 0 12px 28px -14px rgba(43,43,38,0.28); }
-    }
-    .video iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-    .video-caption {
-      margin-top: 0.85rem;
-      font-size: 0.88rem;
-      color: var(--ebony-soft);
-      text-align: center;
-    }
-
-    /* ——— CTAs ——————————————————————————————————————————————————— */
-    .cta-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem 1rem;
-      align-items: center;
-    }
-    .btn {
-      display: inline-flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      padding: 0.9rem 1.4rem;
-      min-height: 48px;
-      font-family: var(--font-body);
-      font-size: 0.98rem;
-      font-weight: 500;
-      text-decoration: none;
-      border-radius: 999px;
-      transition: background 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
-      line-height: 1.1;
-      border: 1px solid transparent;
-      cursor: pointer;
+      padding: 2rem;
+      padding-top: max(2rem, env(safe-area-inset-top, 0));
+      padding-bottom: max(2rem, env(safe-area-inset-bottom, 0));
+    }
+
+    main {
       text-align: center;
-    }
-    .btn-primary {
-      background: var(--reseda);
-      color: var(--bone);
-    }
-    .btn-primary:hover {
-      background: var(--reseda-dark);
-      color: var(--bone);
-      transform: translateY(-1px);
-      box-shadow: 0 6px 16px -6px rgba(94,110,68,0.5);
-    }
-    .btn-secondary {
-      background: transparent;
-      color: var(--ebony);
-      border-color: var(--ebony);
-    }
-    .btn-secondary:hover {
-      background: var(--ebony);
-      color: var(--bone);
-    }
-    .btn .arrow { font-size: 1.1em; transition: transform 150ms ease; }
-    .btn:hover .arrow { transform: translateX(2px); }
-    .cta-meta {
-      margin-top: 1rem;
-      font-size: 0.85rem;
-      color: var(--ebony-soft);
-    }
-    .cta-meta span { white-space: nowrap; }
-
-    .cta-disclaimer {
-      margin-top: 0.6rem;
-      font-size: 0.82rem;
-      color: var(--ebony-soft);
-      font-style: italic;
-      opacity: 0.9;
+      max-width: 28rem;
     }
 
-    /* ——— two col ——————————————————————————————————————————————— */
-    .two-col {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 700px) {
-      .two-col { grid-template-columns: 1fr 1fr; gap: 3rem; }
-    }
-    .two-col h3 {
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid var(--dun);
-      margin-bottom: 1rem;
-    }
-
-    /* ——— numbered cards ————————————————————————————————————————— */
-    .cards {
-      display: grid;
-      gap: 1.25rem;
-      grid-template-columns: 1fr;
-      margin: 2rem 0;
-    }
-    @media (min-width: 700px) {
-      .cards-3 { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    }
-    .card {
-      background: rgba(204, 191, 163, 0.22);
-      border: 1px solid var(--dun);
-      border-radius: 6px;
-      padding: 1.5rem;
-    }
-    .card .num {
-      font-family: var(--font-display);
-      font-size: 0.85rem;
-      letter-spacing: 0.1em;
-      color: var(--reseda-dark);
-      margin-bottom: 0.5rem;
-    }
-    .card h3 {
-      font-family: var(--font-display);
+    .brand {
+      font-size: clamp(3rem, 12vw, 5.5rem);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      font-variation-settings: "opsz" 144;
+      margin: 0;
       font-weight: 400;
-      font-size: 1.2rem;
-      margin-bottom: 0.6rem;
-      letter-spacing: -0.01em;
     }
-    .card p {
-      font-size: 0.96rem;
-      color: var(--ebony-soft);
-      margin: 0;
-    }
+    .brand .dot { color: var(--reseda); }
 
-    /* ——— numbered steps ———————————————————————————————————————— */
-    ol.steps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      counter-reset: step;
-    }
-    ol.steps li {
-      counter-increment: step;
-      position: relative;
-      padding-left: 2.75rem;
-      margin-bottom: 1.5rem;
-    }
-    ol.steps li::before {
-      content: counter(step, decimal-leading-zero);
-      position: absolute;
-      left: 0;
-      top: 0.1em;
-      font-family: var(--font-display);
-      font-size: 0.95rem;
-      color: var(--reseda-dark);
-      letter-spacing: 0.05em;
-    }
-    ol.steps li strong {
-      display: block;
-      font-weight: 500;
-      margin-bottom: 0.15rem;
-      font-size: 1.05rem;
-    }
-    ol.steps li p {
-      margin: 0;
-      color: var(--ebony-soft);
-    }
-
-    /* ——— callout ——————————————————————————————————————————————— */
-    .callout {
-      border-left: 2px solid var(--reseda);
-      padding: 0.5rem 0 0.5rem 1.5rem;
-      margin: 2rem 0;
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      line-height: 1.4;
-      color: var(--ebony);
-      font-style: italic;
-    }
-
-    /* ——— important notice ————————————————————————————————————— */
-    .notice-box {
-      background: rgba(204, 191, 163, 0.30);
-      border: 1px solid var(--dun);
-      border-left: 3px solid var(--reseda);
-      border-radius: 6px;
-      padding: 1.75rem;
+    .tagline {
       margin-top: 1.5rem;
-    }
-    @media (min-width: 700px) {
-      .notice-box { padding: 2.25rem 2.5rem; }
-    }
-    .notice-box p { font-size: 0.95rem; }
-    .notice-box strong { color: var(--ebony); }
-    .notice-box ul {
-      margin: 0 0 1.2em;
-      padding-left: 1.25rem;
-    }
-    .notice-box ul li {
-      font-size: 0.95rem;
-      color: var(--ebony-soft);
-      margin-bottom: 0.5em;
-    }
-
-    /* ——— FAQ ——————————————————————————————————————————————————— */
-    details.faq {
-      border-bottom: 1px solid var(--dun);
-      padding: 1.25rem 0;
-    }
-    details.faq:first-of-type { border-top: 1px solid var(--dun); }
-    details.faq summary {
-      cursor: pointer;
-      list-style: none;
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-weight: 400;
-      line-height: 1.3;
-      color: var(--ebony);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      min-height: 32px;
-    }
-    details.faq summary::-webkit-details-marker { display: none; }
-    details.faq summary::after {
-      content: "+";
-      font-family: var(--font-body);
-      font-weight: 400;
-      color: var(--reseda-dark);
-      font-size: 1.3rem;
-      transition: transform 200ms ease;
-      flex-shrink: 0;
-    }
-    details.faq[open] summary::after { content: "–"; }
-    details.faq .faq-body {
-      padding-top: 0.85rem;
-      color: var(--ebony-soft);
-      font-size: 0.98rem;
-    }
-
-    /* ——— signature card ————————————————————————————————————————— */
-    .sig {
-      background: rgba(204, 191, 163, 0.25);
-      border: 1px solid var(--dun);
-      border-radius: 6px;
-      padding: 1.75rem;
-      margin-top: 2rem;
-    }
-
-    /* ——— footer ———————————————————————————————————————————————— */
-    footer {
-      padding: 4rem var(--pad) 3rem;
-      padding-bottom: max(3rem, calc(env(safe-area-inset-bottom, 0) + 2rem));
-      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
-      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
-      border-top: 1px solid var(--dun);
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: var(--ebony-soft);
-    }
-    footer .wrap-wide {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: 1fr;
-      padding: 0;
-    }
-    @media (min-width: 700px) {
-      footer .wrap-wide { grid-template-columns: 2fr 1fr; }
-    }
-    footer h3 {
-      font-family: var(--font-display);
-      font-weight: 400;
-      font-size: 1.1rem;
-      color: var(--ebony);
-      margin-bottom: 0.5rem;
-    }
-    footer a {
-      color: var(--ebony-soft);
-      display: inline-block;
-      margin-right: 1rem;
-    }
-    .footer-disclaimer {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--dun);
-      font-size: 0.78rem;
-      color: var(--ebony-soft);
-      opacity: 0.95;
-      max-width: var(--measure);
-      line-height: 1.55;
-    }
-    .footer-disclaimer strong { color: var(--ebony); }
-
-    .mark {
-      font-family: var(--font-display);
       font-style: italic;
-      color: var(--reseda);
-      display: inline-block;
-      transform: translateY(1px);
+      color: var(--ebony-soft);
+      font-size: 1.05rem;
+      line-height: 1.5;
     }
 
-    @media (max-width: 560px) {
-      h1 { letter-spacing: -0.02em; }
-      .btn { width: 100%; }
-      .cta-group { flex-direction: column; align-items: stretch; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
+    footer {
+      position: fixed;
+      bottom: max(1.25rem, env(safe-area-inset-bottom, 0));
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--ebony-soft);
+      opacity: 0.7;
     }
   </style>
 </head>
-
 <body>
-  <header class="topbar">
-    <a href="#" class="brand">calmlybloom<span class="dot">.</span></a>
-    <nav>
-      <a href="#fears">Why now</a>
-      <a href="#call">The call</a>
-      <a href="#about">About</a>
-      <a href="#notice">Notice</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-  </header>
-
-  <!-- ——— HERO ————————————————————————————————————————————————— -->
-  <section class="hero wrap-wide">
-    <p class="eyebrow">A softer way to learn about crypto</p>
-
-    <h1>Calm, <em>not</em> complicated.</h1>
-
-    <p class="lede">
-      You deserve a life designed by you — not your inbox, not your boss, not the next viral side hustle. I'm Laura. If you've been quietly curious about crypto but kept hitting walls of jargon and hype, the first step isn't a course or a download. It's a conversation.
-    </p>
-
-    <div class="cta-group">
-      <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        Book a free 30-min chat <span class="arrow">→</span>
-      </a>
-      <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site%20and%20I%27d%20love%20to%20chat." target="_blank" rel="noopener">
-        Or WhatsApp me
-      </a>
-    </div>
-    <p class="cta-meta">
-      <span>No credit card.</span> &nbsp;·&nbsp; <span>Zero pressure.</span> &nbsp;·&nbsp; <span>I'll be on time.</span>
-    </p>
-    <p class="cta-disclaimer">
-      An educational conversation only. Not financial advice. <a href="#notice">Read the full notice.</a>
-    </p>
-
-    <div class="video">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/8ASnNp1HkjA?rel=0&modestbranding=1&color=white&playsinline=1"
-        title="A note from Laura"
-        loading="lazy"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        referrerpolicy="strict-origin-when-cross-origin">
-      </iframe>
-    </div>
-    <p class="video-caption">A two-minute note from me — why this exists, and who it's for.</p>
-  </section>
-
-  <hr />
-
-  <!-- ——— THE THREE FEARS ————————————————————————————————————————— -->
-  <section class="wrap" id="fears">
-    <p class="eyebrow">Let's be honest</p>
-    <h2>Crypto feels scary. And honestly? That's completely valid.</h2>
-
-    <p>
-      I am not going to pretend the reasons people stay out of this world aren't real. They are. Three walls I see people hit, and what we'll talk through if you book a chat.
-    </p>
-
-    <div class="cards cards-3">
-      <div class="card">
-        <div class="num">01</div>
-        <h3>The complexity is overwhelming.</h3>
-        <p>Blockchains, wallets, gas fees, seed phrases. Most people feel lost before they've even started, and that's not a failing — it's a vocabulary that was never built with you in mind.</p>
-      </div>
-      <div class="card">
-        <div class="num">02</div>
-        <h3>The volatility is genuinely frightening.</h3>
-        <p>Prices swing wildly, sometimes overnight. Without a calm framing and someone who's sat through it before, it can feel like a rollercoaster with no seatbelt.</p>
-      </div>
-      <div class="card">
-        <div class="num">03</div>
-        <h3>The scams have made trust nearly impossible.</h3>
-        <p>So many promises, so many vanished funds. The mistrust isn't paranoia — it's a rational response to a space that has badly let people down.</p>
-      </div>
-    </div>
-
-    <div class="callout">
-      You don't need to become a crypto expert. You just need a calm starting point and someone honest to think out loud with.
-    </div>
-
-    <div class="cta-group">
-      <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        I'm ready to chat <span class="arrow">→</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ——— WHAT THIS IS / ISN'T ————————————————————————————————— -->
-  <section class="wrap">
-    <p class="eyebrow">What this is, and isn't</p>
-    <h2>Not another crypto pitch.</h2>
-
-    <p>
-      No signals. No tips. No "just trust me" tables of green numbers. No promises or guarantees of any returns of any kind, ever. This is not a trading service. It is not investment advice. I am not a licensed financial advisor and I am not a registered Financial Services Provider.
-    </p>
-
-    <p>
-      What I am is someone who walked into crypto as a complete outsider, asked a lot of beginner questions, made a lot of small mistakes, and slowly built a relationship with it that feels manageable. Not exciting. Not dramatic. <em>Manageable.</em> That is the part nobody seems to talk about.
-    </p>
-
-    <p>
-      If you are curious about crypto but every resource you have opened so far felt like it was written by a 22-year-old shouting from a Lamborghini, this is the opposite of that.
-    </p>
-  </section>
-
-  <hr />
-
-  <!-- ——— THE CALL ——————————————————————————————————————————— -->
-  <section class="wrap" id="call">
-    <p class="eyebrow">The free chat</p>
-    <h2>What a 30-minute conversation looks like.</h2>
-
-    <p>
-      The chat is free, it's on Zoom or WhatsApp, no slides, no pitch deck. Here is what happens, start to finish.
-    </p>
-
-    <ol class="steps">
-      <li>
-        <strong>You tell me where you're at.</strong>
-        <p>What's got you curious. What's making you hesitant. What you've already tried, if anything.</p>
-      </li>
-      <li>
-        <strong>I ask more questions than I answer.</strong>
-        <p>The first part is about understanding your situation — your goals, your comfort with uncertainty, your timeline, what financial freedom actually looks like for you. Not a generic version of it. Yours.</p>
-      </li>
-      <li>
-        <strong>I share what learning looks like, in plain language.</strong>
-        <p>Conceptual, never prescriptive. The point is to give you a feel for how I think about all of this — not to tell you what to do with your money. Specific decisions about specific assets are not part of this conversation.</p>
-      </li>
-      <li>
-        <strong>You decide what's next.</strong>
-        <p>Maybe that's an educational community I think you'd find calming and clear. Maybe it's a short reading list and us parting ways. Maybe it's "let's talk again in a month." No sales close, no countdown timer, no upsell at the door.</p>
-      </li>
-    </ol>
-
-    <div class="cta-group" style="margin-top: 2.5rem;">
-      <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-        Book a free chat <span class="arrow">→</span>
-      </a>
-      <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20chat%20before%20booking." target="_blank" rel="noopener">
-        WhatsApp first
-      </a>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ——— WHO IT'S FOR ————————————————————————————————————————— -->
-  <section class="wrap">
-    <p class="eyebrow">Who this is for</p>
-    <h2>The honest filter.</h2>
-
-    <div class="two-col">
-      <div>
-        <h3>You'll probably get something out of this if…</h3>
-        <p>You're curious about crypto but the usual rooms feel loud, gendered, or hostile to a real beginner question.</p>
-        <p>You want options for your future — not a side hustle, not a grind — and you're willing to learn something slowly.</p>
-        <p>You've been "going to look into this" for a year and want a warm, judgement-free starting point.</p>
-      </div>
-      <div>
-        <h3>This probably isn't for you if…</h3>
-        <p>You're looking for "what coin should I buy this week?" — I won't tell you, and neither should anyone else who's being honest.</p>
-        <p>You want guaranteed returns or overnight results. Crypto is not that, and anyone who says otherwise is selling you something.</p>
-        <p>You already trade actively and are looking for a signals service. That's a different kind of product, and I am not it.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ——— ABOUT ——————————————————————————————————————————————— -->
-  <section class="wrap" id="about">
-    <p class="eyebrow">A bit about me</p>
-    <h2>Laura, mom first.</h2>
-
-    <p>
-      I didn't come from tech. I didn't come from finance. I had exactly zero interest in being the loudest person in any room. Crypto happened to me slowly — one honest conversation at a time, with people who were patient with my questions instead of impressed by their own answers.
-    </p>
-
-    <p>
-      What I noticed, and what still bothers me, is that most of the door into this world has been guarded by men in expensive cars and 19-year-olds yelling about "cycles." There is a quieter, more practical version of this story. It involves patience, slow learning, being honest with yourself about what you can afford to lose, and the freedom to build something on your own terms — not as a side grind, but as part of a softer, more unhurried life.
-    </p>
-
-    <p>
-      My goal on the chat isn't to convert you. It's to give you the conversation I wish I'd had on day one — the one that would have saved me a year of wondering whether this was for me.
-    </p>
-
-    <div class="sig">
-      <p style="margin: 0;">
-        <span class="mark">✿</span> <em>If any of this sounds like what you've been looking for, I'd genuinely love to hear from you.</em>
-      </p>
-      <div class="cta-group" style="margin-top: 1.25rem;">
-        <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-          Book a free chat <span class="arrow">→</span>
-        </a>
-        <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
-          WhatsApp me
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ——— IMPORTANT NOTICE ————————————————————————————————————— -->
-  <section class="wrap" id="notice">
-    <p class="eyebrow">Plain truth in plain language</p>
-    <h2>Read this before you book.</h2>
-
-    <p>
-      I'm putting this in the middle of the page on purpose. Most websites bury this kind of thing in a font so tiny no one ever sees it. I'd rather you read it now and decide whether the conversation makes sense for you.
-    </p>
-
-    <div class="notice-box">
-      <p><strong>What this site is:</strong> a personal page where I share what I have learned about crypto from sitting with it for a while, and an invitation to have a free educational conversation.</p>
-
-      <p><strong>What this site and the free conversation are not:</strong></p>
-      <ul>
-        <li>financial, investment, tax, accounting, or legal advice;</li>
-        <li>a recommendation, endorsement, solicitation, offer, or invitation to buy, sell, hold, subscribe to, or invest in any cryptocurrency, digital asset, security, derivative, or any other financial product;</li>
-        <li>a "financial service" or "intermediary service" as those terms are defined under the South African Financial Advisory and Intermediary Services Act, 2002 ("FAIS Act");</li>
-        <li>the activities of an authorised Financial Services Provider ("FSP") regulated by the South African Financial Sector Conduct Authority ("FSCA");</li>
-        <li>portfolio management, signal services, copy-trading, or any form of discretionary investment management.</li>
-      </ul>
-
-      <p>
-        I am <strong>not</strong> a licensed FSP. I am <strong>not</strong> a registered financial advisor. I do <strong>not</strong> hold myself out as either. I do not provide intermediary services and I do not offer or distribute financial products. The free conversation I offer through this site is a personal, educational chat. Nothing said on it should be relied on as advice.
-      </p>
-
-      <p>
-        Cryptocurrencies and crypto assets are highly volatile and speculative. You can — and many people do — lose money, including the entire amount you put in. Past behaviour of any asset is not indicative of future performance. <strong>No outcomes, returns, or results of any kind are promised, implied, projected, or guaranteed.</strong>
-      </p>
-
-      <p>
-        Before making any financial decision, consult a person who is appropriately licensed and regulated to give that advice in your jurisdiction. In South Africa, that is an FSP registered with the FSCA. You are solely responsible for any decision you make as a result of reading this site, watching the video, or speaking with me.
-      </p>
-
-      <p style="margin-bottom: 0;">
-        By booking the free chat or contacting me, you confirm that you understand and accept this notice in full.
-      </p>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- ——— FAQ ———————————————————————————————————————————————— -->
-  <section class="wrap" id="faq">
-    <p class="eyebrow">Frequently, gently asked</p>
-    <h2>Questions people actually ask on the phone.</h2>
-
-    <details class="faq">
-      <summary>Is this a scam?</summary>
-      <div class="faq-body">
-        <p>Honest answer: I would be suspicious too. The free chat is 30 minutes, on video, with a real person — me. I don't ask for money, card details, or any financial information on the chat. If at the end I think there's an educational community or resource you might enjoy, I'll mention it. Whether you ever do anything with that suggestion is entirely your call. If nothing fits, we part ways and you've spent 30 minutes.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>Are you a licensed financial advisor?</summary>
-      <div class="faq-body">
-        <p>No. I am explicitly <em>not</em> a licensed Financial Services Provider, I am <em>not</em> a registered financial advisor, and I do <em>not</em> give regulated financial advice. Anything I share — on a chat, on this site, anywhere — is personal experience and general educational context. Every financial decision you make is yours alone. For any regulated advice, speak to a licensed FSP registered with the South African FSCA (or the equivalent regulator in your country).</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>How much money do I need to have to talk to you?</summary>
-      <div class="faq-body">
-        <p>None, for the chat. The chat is free. What you choose to do afterwards is entirely up to you, and the chat itself does not require, request, or involve any financial commitment.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>I've never used crypto. Is this too early?</summary>
-      <div class="faq-body">
-        <p>It is actually a better time. The conversation is easier when you don't have habits or assumptions to unwind. Come with your questions and nothing else.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>Are you alone, or do you work with a team?</summary>
-      <div class="faq-body">
-        <p>I learn alongside a small group of people who have been around crypto longer than I have. The chat is just with me. If you ever decide to join the educational community I am part of, you would meet the others gradually — never thrown into a Discord and forgotten. Joining any community is your decision and is unrelated to the free chat.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>Will you tell me what to invest in?</summary>
-      <div class="faq-body">
-        <p>No. Specific investment decisions about specific assets are not part of this conversation, ever. If you want that kind of advice, please speak with a licensed Financial Services Provider in your jurisdiction.</p>
-      </div>
-    </details>
-
-    <details class="faq">
-      <summary>Is this only for women?</summary>
-      <div class="faq-body">
-        <p>The tone and the people I have mostly talked with skew female, but the conversation is open to anyone who resonates with the "calm, not complicated" framing.</p>
-      </div>
-    </details>
-  </section>
-
-  <!-- ——— FOOTER ————————————————————————————————————————————— -->
-  <footer>
-    <div class="wrap-wide">
-      <div>
-        <h3>Ready to have the conversation?</h3>
-        <p style="margin-bottom: 1.25rem;">No forms. No newsletter. Pick whichever feels easiest.</p>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="https://calendly.com/lauraweyel7/30min" target="_blank" rel="noopener">
-            Book a free chat <span class="arrow">→</span>
-          </a>
-          <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
-            WhatsApp me
-          </a>
-        </div>
-      </div>
-      <div>
-        <h3>calmlybloom<span style="color: var(--reseda);">.</span></h3>
-        <p style="margin: 0;">Laura · Cape Town, South Africa</p>
-        <p style="margin: 0.3rem 0 0;"><a href="mailto:hello@calmlybloom.com">hello@calmlybloom.com</a></p>
-      </div>
-    </div>
-
-    <div class="wrap-wide footer-disclaimer">
-      <p>
-        <strong>Important — please read.</strong> This website and any conversation arising from it are for general educational and informational purposes only. They do not constitute, and must not be interpreted as, financial, investment, tax, accounting, or legal advice, nor as a recommendation, endorsement, solicitation, offer, or invitation to buy, sell, hold, or invest in any cryptocurrency, digital asset, security, or any other financial product. The author of this site is <strong>not</strong> a licensed Financial Services Provider, is <strong>not</strong> a registered financial advisor, and does <strong>not</strong> provide intermediary services as defined under the South African Financial Advisory and Intermediary Services Act, 2002 (FAIS Act). The author is <strong>not</strong> regulated by the South African Financial Sector Conduct Authority (FSCA). Cryptocurrencies are highly volatile and speculative; you can lose all of the money you put in. No returns or outcomes of any kind are promised, implied, projected, or guaranteed. Past behaviour is not indicative of future performance. Before making any financial decision, consult a person licensed and regulated to give that advice in your jurisdiction (in South Africa, an FSP registered with the FSCA). You are solely responsible for any decisions you make. By using this site or contacting the author, you confirm that you understand and accept this notice. <a href="#notice">Read the full notice ↑</a>
-      </p>
-      <p style="margin-top: 0.75rem;">© <span id="year">2026</span> calmlybloom · Laura Weyel · Cape Town, South Africa.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <main>
+    <h1 class="brand">calmlybloom<span class="dot">.</span></h1>
+    <p class="tagline">An idea taking shape. Back soon.</p>
+  </main>
+  <footer>© <span id="year">2026</span> calmlybloom · Cape Town</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
