@@ -30,7 +30,7 @@ DNS and domain admin go through Porkbun. The owner's domains have per-domain API
 
 ### Credentials
 
-Live in `~/Projects/better-out-co/.env` (shared across the owner's repos):
+Live in `~/Projects/better-out-co-vault/.env` (shared across the owner's repos):
 
 ```
 PORKBUN_API_KEY=...
@@ -40,7 +40,7 @@ PORKBUN_SECRET_KEY=...
 Load with:
 
 ```bash
-set -a; source ~/Projects/better-out-co/.env; set +a
+set -a; source ~/Projects/better-out-co-vault/.env; set +a
 ```
 
 Never commit the `.env` or echo the key values into shell history / logs.
