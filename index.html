@@ -5,93 +5,724 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
 
-  <title>calmlybloom</title>
-  <meta name="description" content="calmlybloom — coming soon." />
-  <meta name="robots" content="noindex, nofollow" />
+  <title>calmlybloom — Laura Weyel</title>
+  <meta name="description" content="A soft life and a rich one. 1:1 mentorship with Laura Weyel to become magnetic — freedom, abundance, love, joy, fulfillment. Book a free call." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="calmlybloom — Laura Weyel" />
+  <meta property="og:description" content="A soft life and a rich one. 1:1 mentorship to become magnetic — freedom, abundance, love, joy, fulfillment." />
+  <meta property="og:url" content="https://calmlybloom.com" />
+  <meta property="og:site_name" content="calmlybloom" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="canonical" href="https://calmlybloom.com" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9C%BF%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <style>
+    /* ——— palette ————————————————————————————————————————————————— */
     :root {
-      --bone:    #ebe3d2;
-      --reseda:  #7b8e5f;
-      --ebony:   #2b2b26;
+      --bone:   #FDF9EF;
+      --dun:    #E4DAC0;
+      --sage:   #D8DEC9;
+      --reseda: #B4C593;
+      --reseda-dark: #8FA070;
+      --ebony:  #2b2b26;
       --ebony-soft: #4a4a42;
-      --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+
+      --measure: 38rem;
+      --measure-wide: 52rem;
+      --pad: clamp(1.25rem, 4vw, 2rem);
+
+      --font-display: "Fraunces", "Iowan Old Style", "Apple Garamond", Georgia, serif;
+      --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
 
-    html, body { height: 100%; }
+    html {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
       background: var(--bone);
       color: var(--ebony);
-      font-family: var(--font-display);
-      font-weight: 300;
-      font-feature-settings: "kern", "liga";
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      font-feature-settings: "kern", "liga", "calt";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
-      -webkit-tap-highlight-color: transparent;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      padding-top: max(2rem, env(safe-area-inset-top, 0));
-      padding-bottom: max(2rem, env(safe-area-inset-bottom, 0));
+      overflow-x: hidden;
     }
 
-    main {
-      text-align: center;
-      max-width: 28rem;
+    @media (min-width: 700px) {
+      body { font-size: 18px; }
     }
 
-    .brand {
-      font-size: clamp(3rem, 12vw, 5.5rem);
-      letter-spacing: -0.02em;
-      line-height: 1;
-      font-variation-settings: "opsz" 144;
-      margin: 0;
+    h1, h2, h3 {
+      font-family: var(--font-display);
       font-weight: 400;
+      letter-spacing: -0.015em;
+      margin: 0 0 0.6em;
+      color: var(--ebony);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 4.25rem);
+      line-height: 1.04;
+      font-variation-settings: "opsz" 144, "SOFT" 50;
+    }
+
+    h2 {
+      font-size: clamp(1.55rem, 3.5vw, 2.15rem);
+      line-height: 1.18;
+      margin-top: 0;
+      font-variation-settings: "opsz" 72;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 0.4em;
+      font-family: var(--font-body);
+      letter-spacing: -0.005em;
+    }
+
+    p { margin: 0 0 1.2em; }
+    p:last-child { margin-bottom: 0; }
+
+    em { font-style: italic; }
+
+    a {
+      color: var(--reseda-dark);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+      text-decoration-thickness: 1px;
+      transition: color 120ms ease;
+    }
+    a:hover { color: var(--ebony); }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--dun);
+      margin: 4rem auto;
+      max-width: var(--measure);
+    }
+
+    .eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--reseda-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .muted { color: var(--ebony-soft); }
+
+    /* ——— layout ————————————————————————————————————————————————— */
+    .wrap {
+      max-width: var(--measure);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+    .wrap-wide {
+      max-width: var(--measure-wide);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+    section { padding: 3rem 0; }
+    @media (min-width: 700px) { section { padding: 5rem 0; } }
+
+    /* ——— top bar ————————————————————————————————————————————————— */
+    .topbar {
+      padding: 1.25rem var(--pad);
+      padding-top: max(1.25rem, env(safe-area-inset-top, 0));
+      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
+      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--measure-wide);
+      margin: 0 auto;
+      gap: 0.75rem;
+    }
+    .brand {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.15rem;
+      color: var(--ebony);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      flex-shrink: 0;
     }
     .brand .dot { color: var(--reseda); }
-
-    .tagline {
-      margin-top: 1.5rem;
-      font-style: italic;
+    .topbar nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .topbar nav a {
       color: var(--ebony-soft);
-      font-size: 1.05rem;
-      line-height: 1.5;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .topbar nav a:hover { color: var(--ebony); }
+    @media (max-width: 560px) {
+      .topbar nav { gap: 1rem; font-size: 0.82rem; }
+    }
+    @media (max-width: 379px) {
+      .topbar nav { display: none; }
     }
 
-    footer {
-      position: fixed;
-      bottom: max(1.25rem, env(safe-area-inset-bottom, 0));
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 0.75rem;
-      letter-spacing: 0.04em;
+    /* ——— hero ——————————————————————————————————————————————————— */
+    .hero { padding: 1.5rem 0 0; }
+    @media (min-width: 700px) { .hero { padding: 3rem 0 0; } }
+
+    .hero .lede {
+      font-size: 1.1rem;
       color: var(--ebony-soft);
-      opacity: 0.7;
+      max-width: 32rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .hero .lede { font-size: 1.25rem; margin-bottom: 2.25rem; }
+    }
+
+    /* ——— CTAs ——————————————————————————————————————————————————— */
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.4rem;
+      min-height: 48px;
+      font-family: var(--font-body);
+      font-size: 0.98rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 999px;
+      transition: background 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+      line-height: 1.1;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background: var(--reseda);
+      color: var(--ebony);
+    }
+    .btn-primary:hover {
+      background: var(--reseda-dark);
+      color: var(--bone);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px -6px rgba(143,160,112,0.5);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--ebony);
+      border-color: var(--ebony);
+    }
+    .btn-secondary:hover {
+      background: var(--ebony);
+      color: var(--bone);
+    }
+    .btn .arrow { font-size: 1.1em; transition: transform 150ms ease; }
+    .btn:hover .arrow { transform: translateX(2px); }
+    .cta-meta {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--ebony-soft);
+    }
+    .cta-meta span { white-space: nowrap; }
+
+    .cta-disclaimer {
+      margin-top: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--ebony-soft);
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    /* ——— two col ——————————————————————————————————————————————— */
+    .two-col {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 700px) {
+      .two-col { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    }
+    .two-col h3 {
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--dun);
+      margin-bottom: 1rem;
+    }
+
+    .possible strong { color: var(--reseda-dark); }
+
+    /* ——— alternating green band sections ————————————————————————— */
+    .band-sage {
+      background: var(--sage);
+    }
+    .band-sage .eyebrow { color: var(--ebony); opacity: 0.6; }
+    .band-sage a { color: var(--ebony); }
+    .band-sage a:hover { color: var(--ebony-soft); }
+    .band-sage .callout { border-left-color: var(--ebony); }
+    .band-sage ol.steps li::before { color: var(--ebony); opacity: 0.55; }
+    .band-sage .card {
+      background: var(--bone);
+      border-color: rgba(43,43,38,0.12);
+    }
+    .band-sage .card .num { color: var(--ebony); opacity: 0.6; }
+    .band-sage .sig {
+      background: rgba(255,255,255,0.45);
+      border-color: rgba(43,43,38,0.15);
+    }
+    .band-sage .two-col h3 { border-bottom-color: rgba(43,43,38,0.2); }
+
+    /* ——— numbered cards ————————————————————————————————————————— */
+    .cards {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 1fr;
+      margin: 2rem 0;
+    }
+    @media (min-width: 700px) {
+      .cards-3 { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    }
+    .cards-4 { grid-template-columns: 1fr; gap: 1.25rem; }
+    .card {
+      background: rgba(204, 191, 163, 0.22);
+      border: 1px solid var(--dun);
+      border-radius: 6px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .card .num {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      color: var(--reseda-dark);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    .card h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+    .card p {
+      font-size: 0.96rem;
+      color: var(--ebony-soft);
+      margin: 0 0 1.25rem;
+      flex-grow: 1;
+    }
+    .card .btn { align-self: flex-start; }
+
+    /* ——— numbered steps ———————————————————————————————————————— */
+    ol.steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: step;
+    }
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 2.75rem;
+      margin-bottom: 1.5rem;
+    }
+    ol.steps li::before {
+      content: counter(step, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      top: 0.1em;
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      color: var(--reseda-dark);
+      letter-spacing: 0.05em;
+    }
+    ol.steps li strong {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+      font-size: 1.05rem;
+    }
+    ol.steps li p {
+      margin: 0;
+      color: var(--ebony-soft);
+    }
+
+    /* ——— callout ——————————————————————————————————————————————— */
+    .callout {
+      border-left: 2px solid var(--reseda);
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      color: var(--ebony);
+      font-style: italic;
+    }
+
+    /* ——— signature card ————————————————————————————————————————— */
+    .sig {
+      background: rgba(204, 191, 163, 0.25);
+      border: 1px solid var(--dun);
+      border-radius: 6px;
+      padding: 1.75rem;
+      margin-top: 2rem;
+    }
+
+    /* ——— footer ———————————————————————————————————————————————— */
+    footer {
+      padding: 4rem var(--pad) 3rem;
+      padding-bottom: max(3rem, calc(env(safe-area-inset-bottom, 0) + 2rem));
+      padding-left: max(var(--pad), env(safe-area-inset-left, 0));
+      padding-right: max(var(--pad), env(safe-area-inset-right, 0));
+      border-top: 1px solid var(--dun);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--ebony-soft);
+    }
+    footer .wrap-wide {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    @media (min-width: 700px) {
+      footer .wrap-wide { grid-template-columns: 2fr 1fr; }
+    }
+    footer h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: var(--ebony);
+      margin-bottom: 0.5rem;
+    }
+    footer a {
+      color: var(--ebony-soft);
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .footer-disclaimer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--dun);
+      font-size: 0.78rem;
+      color: var(--ebony-soft);
+      opacity: 0.95;
+      max-width: var(--measure);
+      line-height: 1.55;
+    }
+    .footer-disclaimer strong { color: var(--ebony); }
+
+    .mark {
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--reseda);
+      display: inline-block;
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 560px) {
+      h1 { letter-spacing: -0.02em; }
+      .btn { width: 100%; }
+      .cta-group { flex-direction: column; align-items: stretch; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <h1 class="brand">calmlybloom<span class="dot">.</span></h1>
-    <p class="tagline">An idea taking shape. Back soon.</p>
-  </main>
-  <footer>© <span id="year">2026</span> calmlybloom · Cape Town</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <header class="topbar">
+    <a href="#" class="brand">calmlybloom<span class="dot">.</span></a>
+    <nav>
+      <a href="#why">Why now</a>
+      <a href="#offerings">Work with me</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- ——— HERO ————————————————————————————————————————————————— -->
+  <section class="hero wrap-wide">
+    <p class="eyebrow">A soft life. A rich life. Both.</p>
+
+    <h1>Calm, <em>not</em> complicated.</h1>
+
+    <p class="lede">
+      The hustle-and-stress era is over. I don't work in the realm of logic — I work in the realm of magic. It's time to manifest a soft life <em>and</em> a rich one — freedom, abundance, love, joy, fulfillment. Money is just one part of it. I'm Laura, and this is your portal to your own inner abundance. If you're ready to become magnetic enough to attract all of it, the first step isn't another vision board. It's a real conversation.
+    </p>
+
+    <div class="cta-group">
+      <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener">
+        Book a session <span class="arrow">→</span>
+      </a>
+      <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site%20and%20I%27d%20love%20to%20chat." target="_blank" rel="noopener">
+        Or WhatsApp me
+      </a>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHY NOW ————————————————————————————————————————— -->
+  <section class="band-sage" id="why">
+    <div class="wrap">
+    <p class="eyebrow">Let's be honest</p>
+    <h2>Hustle never made you magnetic. It just made you tired.</h2>
+
+    <p>
+      I'm not going to pretend the exhaustion is imaginary. Three walls I see women hit before they ever get the chance to feel magnetic — and what we work through in a session.
+    </p>
+
+    <ol class="steps">
+      <li>
+        <strong>You've said the affirmations. Nothing landed.</strong>
+        <p>You can say "I'm worthy of a deeply connected relationship" a thousand times in the mirror. But if some part of you still feels unworthy of it underneath, that's the frequency you're actually transmitting — and that's exactly what comes back. Words were never the mechanism. Identity is.</p>
+      </li>
+      <li>
+        <strong>Wanting a soft, abundant life feels selfish.</strong>
+        <p>Somewhere along the way, ambition got confused with greed, and rest got confused with laziness. Both are lies you were taught, not truths you were born with.</p>
+      </li>
+      <li>
+        <strong>You think you have to choose between soft and rich.</strong>
+        <p>Ease got mistaken for one lane, success for another — like you only get to pick one. You don't. That's the whole point of becoming magnetic instead of exhausted.</p>
+      </li>
+    </ol>
+
+    <div class="callout">
+      You don't need more affirmations. You need to go into the shadow — the fears, the self-doubt, the confusion — until what's underneath is crystal clear. That's what actually shifts your frequency.
+    </div>
+
+    <div class="cta-group">
+      <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener">
+        I'm ready <span class="arrow">→</span>
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHAT THIS IS / ISN'T ————————————————————————————————— -->
+  <section class="wrap">
+    <p class="eyebrow">What this is, and isn't</p>
+    <h2>Not another manifestation pitch.</h2>
+
+    <p>
+      No "manifest a Lamborghini by Friday." No guarantees, no overnight transformations, no toxic positivity dressed up as spirituality. This isn't a course that sits unfinished in your inbox.
+    </p>
+
+    <p>
+      This is identity work, not mindset work. Affirmations can't out-talk a frequency you don't actually believe. So we don't start with what you want — we start with what's underneath: the parts of you still hiding, still bracing, still convinced that if anyone really saw you, they'd leave. We drag them into the light until there's nowhere left to hide. Uncomfortable, yes. But it's the only thing that actually makes a woman magnetic — effortless alignment, true happiness, real wealth, all downstream of who you are, on an identity level.
+    </p>
+
+    <p>
+      If every manifestation account you follow feels like glitter with nothing underneath it, this is the opposite of that.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHAT BECOMES POSSIBLE ——————————————————————————————— -->
+  <section class="wrap possible">
+    <p class="eyebrow">What becomes possible</p>
+    <h2>I'm only for the ones who want to be delusional.</h2>
+
+    <p>
+      The ones who dream big and want to manifest a devoted partner over shallow situationships, a location-free adventure life over 9-to-5, a body that is wildly orgasmic over tense and exhausted. This is for those who are done with "realistic." This was never just about your mindset. This is your entire life.
+    </p>
+
+    <p>
+      <strong>Love.</strong> Not a compromise wearing a ring. A sacred union — the one you stop chasing the moment you're magnetic enough to be recognized. You were built for devotion, not negotiation.
+    </p>
+
+    <p>
+      <strong>Freedom.</strong> Location-free. Time-free. Family, adventure, and purpose living in the same breath — not stolen in the gaps between hustle and collapse. Wild. Unscheduled. Entirely yours.
+    </p>
+
+    <p>
+      <strong>Your body.</strong> Multi-orgasmic, full-body ecstasy isn't rare or lucky. It's what's waiting the second your channels stop being blocked and your nervous system stops bracing for impact. Unleashing your feminine magnetism is activating your kundalini — raw, electric, awake.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- ——— OFFERINGS ——————————————————————————————————————————— -->
+  <section class="band-sage" id="offerings">
+    <div class="wrap-wide">
+    <p class="eyebrow">Work with me</p>
+    <h2>Four ways in, depending on where you're at.</h2>
+
+    <p class="wrap" style="padding: 0; max-width: var(--measure);">
+      Two signature sessions, one deeper container, and a free call on building wealth.
+    </p>
+
+    <div class="callout">
+      And to be clear — this isn't just for women. If you're a man ready to go deep, the invitation to work with me is yours too. Magnetism doesn't check gender at the door.
+    </div>
+
+    <div class="cards cards-4">
+      <div class="card">
+        <div class="num">1 Hour · Letting Go · $85</div>
+        <h3>You know. So why haven't you moved?</h3>
+        <p>You already know what your path is, the signs are there. The country pulling you. The business idea you're too passionate about, the special spark you felt for someone. And still — fear, doubt, and overthinking keep you circling instead of moving forward and stepping in fully. This isn't talk therapy. It's alchemy — powerful tools and practices I teach you to burn through that fear, doubt, and guilt at the root, so they stop running your life from the shadows. You don't manage these in this session. You release them. For good.</p>
+        <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20Letting%20Go%20session." target="_blank" rel="noopener">
+          Book a Letting Go session <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="card">
+        <div class="num">2 Hours · Subconscious Journey · $125</div>
+        <h3>Reconnect to the life you can't even picture yet.</h3>
+        <p>Maybe you feel nothing at all — no pull, no fire, no calling. Just static, numb, a flatline where your passion and purpose should be. You feel lost. You're in hiding — from your own life, in plain sight, calling it "fine" so no one asks twice. It's a block, and left alone it doesn't stay quiet — it calcifies. A guided descent deep into your subconscious, where I open the portal between you and your higher self — to reconnect you to your soul, your spirit guides, your ancestors — so you finally remember why you're here on Earth. I'm not the healer here. I'm the bridge. I guide you through the new terrain, the magic does the rest.</p>
+        <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20subconscious%20journey%20session." target="_blank" rel="noopener">
+          Book a journey session <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="card">
+        <div class="num">Mentorship · 8 Sessions</div>
+        <h3>The soft life, built properly.</h3>
+        <p>Eight sessions, 1:1 with me, weaving both — letting go and subconscious work — to shift your identity at the root and actually build the magnetic life: freedom, abundance, love, joy, fulfillment, all of it. You walk in overthinking whether you're worthy. You walk out getting chosen without chasing, paid without apologizing, and touched like heaven finally moved into your body. This isn't a tweak. It's a full-life reinvention, and you don't walk it alone. You walk it spellbound, with me beside you.</p>
+        <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20hear%20more%20about%20mentorship." target="_blank" rel="noopener">
+          Apply for mentorship <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="card">
+        <div class="num">Free Call · Money &amp; Freedom</div>
+        <h3>Wildly happy and broke don't coexist.</h3>
+        <p>Living free, wildly happy, fully magnetic — none of it survives on a foundation of financial fear. When you're in survival, you are not thriving, and your body keeps the receipts. Check your shoulders for tension you stopped noticing years ago. Check your orgasmic power — probably contracted, guarded, rationed like everything else you've been surviving on. Money isn't separate from your magnetism. It's held in the same body, the same nervous system. This call gets you honest about where you're actually stuck, and the strategy to unclench, open, and grow your bank account.</p>
+        <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20the%20free%20financial%20freedom%20call." target="_blank" rel="noopener">
+          Book your free call <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— WHO IT'S FOR ————————————————————————————————————————— -->
+  <section class="wrap">
+    <p class="eyebrow">Who this is for</p>
+    <h2>The honest filter.</h2>
+
+    <div class="two-col">
+      <div>
+        <h3>This is for you if…</h3>
+        <p>You're done being "realistic" about a life that was always allowed to be bigger, softer, and richer at the same time.</p>
+        <p>You want less hustle and more magnetism — the kind of frequency that draws opportunities instead of chasing them.</p>
+        <p>You've been "meaning to do the inner work" for a year and want a real, honest starting point.</p>
+      </div>
+      <div>
+        <h3>This isn't for you if…</h3>
+        <p>You want a guaranteed formula for riches by next week — I won't promise that, and neither should anyone honest.</p>
+        <p>You're looking for someone to agree with every decision instead of challenge you.</p>
+        <p>You want a group course with no real access to me. That's a different kind of product, and I am not it.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- ——— ABOUT ——————————————————————————————————————————————— -->
+  <section class="band-sage" id="about">
+    <div class="wrap">
+    <p class="eyebrow">A bit about me</p>
+    <h2>Laura, magnetic since always.</h2>
+
+    <p>
+      I didn't build my way out of stress, or shrink for years before finding my way back. I've been magnetic since I can remember — connected to my own inner compass, out of the box, unafraid, allergic to anyone else's script for my life. That was never luck. It was identity. And then I went and built the freedom life to match it. My life is wild, yet soft. Delusional to the outside, but intensely fulfilling to me. I never took the safe path — I flirt with life instead of forcing it. In flow, in ease, in constant surrender, and somehow abundance keeps showing up on every level like it can't help itself. That's not luck. That's the law of the universe.
+    </p>
+
+    <div class="callout">
+      I don't work in the realm of logic. I work in the realm of magic. Having me as your mentor is your portal to your own inner abundance — I help you tap in, and recognize your own light.
+    </div>
+
+    <p>
+      Most of what gets sold as "manifestation" is mindset dressed up — affirmations you say to a mirror, hoping they'll eventually stick. That was never how it worked for me, and it's not how it works for anyone. The universe doesn't respond to the words you repeat. It responds to your frequency. Your identity. You can affirm "I'm ready to be fully seen" every morning — but if visibility still feels dangerous underneath, that's the frequency going out, and that's exactly what comes back: staying small, staying unnoticed, staying safe instead of magnetic.
+    </p>
+
+    <p>
+      So the work isn't more affirmations. It's excavation — pulling the fear, the doubt, the confusion up by the root, until there's nothing left underneath pretending to be fine. A session with me is that conversation. Not a pep talk. The real one.
+    </p>
+
+    <div class="sig">
+      <p style="margin: 0;">
+        <span class="mark">✿</span> <em>If any of this sounds like what you've been circling for a while, I'd genuinely love to hear from you.</em>
+      </p>
+      <div class="cta-group" style="margin-top: 1.25rem;">
+        <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener">
+          Book a session <span class="arrow">→</span>
+        </a>
+        <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
+          WhatsApp me
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ——— FOOTER ————————————————————————————————————————————— -->
+  <footer>
+    <div class="wrap-wide">
+      <div>
+        <h3>Ready for the conversation?</h3>
+        <p style="margin-bottom: 1.25rem;">No forms. No newsletter. Pick whichever feels easiest.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener">
+            Book a session <span class="arrow">→</span>
+          </a>
+          <a class="btn btn-secondary" href="https://wa.me/6285190220646?text=Hi%20Laura%2C%20I%20saw%20your%20site." target="_blank" rel="noopener">
+            WhatsApp me
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>calmlybloom<span style="color: var(--reseda);">.</span></h3>
+        <p style="margin: 0;">Laura Weyel · Cape Town, South Africa</p>
+        <p style="margin: 0.3rem 0 0;"><a href="mailto:hello@calmlybloom.com">hello@calmlybloom.com</a></p>
+      </div>
+    </div>
+
+    <div class="wrap-wide footer-disclaimer">
+      <p>
+        This site and any conversation with Laura are for coaching and educational purposes only — not a substitute for licensed financial, legal, or medical advice. What you get out of it depends on the work you put in.
+      </p>
+      <p style="margin-top: 0.75rem;">© <span id="year">2026</span> calmlybloom · Laura Weyel · Cape Town, South Africa.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
