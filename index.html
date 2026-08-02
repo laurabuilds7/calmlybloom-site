@@ -167,27 +167,10 @@
       flex-shrink: 0;
     }
     .brand .dot { color: var(--reseda); }
-    .topbar nav {
-      display: flex;
-      gap: 1.5rem;
-      font-size: 0.95rem;
-    }
-    .topbar nav a {
-      color: var(--ebony-soft);
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .topbar nav a:hover { color: var(--ebony); }
-    @media (max-width: 560px) {
-      .topbar nav { gap: 1rem; font-size: 0.82rem; }
-    }
-    @media (max-width: 379px) {
-      .topbar nav { display: none; }
-    }
 
     /* ——— hero ——————————————————————————————————————————————————— */
-    .hero { padding: 1.5rem 0 0; }
-    @media (min-width: 700px) { .hero { padding: 3rem 0 0; } }
+    .hero { padding-top: 1.5rem; padding-bottom: 0; }
+    @media (min-width: 700px) { .hero { padding-top: 3rem; padding-bottom: 0; } }
 
     .hero .lede {
       font-size: 1.1rem;
@@ -465,11 +448,6 @@
 <body>
   <header class="topbar">
     <a href="#" class="brand">calmlybloom<span class="dot">.</span></a>
-    <nav>
-      <a href="#why">Why now</a>
-      <a href="#offerings">Work with me</a>
-      <a href="#about">About</a>
-    </nav>
   </header>
 
   <!-- ——— HERO ————————————————————————————————————————————————— -->
